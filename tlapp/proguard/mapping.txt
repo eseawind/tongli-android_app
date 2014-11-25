@@ -1,0 +1,2180 @@
+com.mapabc.cn.apis.ApiDemos -> com.mapabc.cn.apis.ApiDemos:
+    java.util.Comparator sDisplayNameComparator -> a
+    void onCreate(android.os.Bundle) -> onCreate
+    java.util.List getData(java.lang.String) -> a
+    void addItem(java.util.List,java.lang.String,android.content.Intent) -> a
+    void onListItemClick(android.widget.ListView,android.view.View,int,long) -> onListItemClick
+com.mapabc.cn.apis.ApiDemos$1 -> com.mapabc.cn.apis.a:
+    java.text.Collator collator -> a
+    int compare(java.lang.Object,java.lang.Object) -> compare
+com.mapabc.cn.apis.LoginActivity -> com.mapabc.cn.apis.LoginActivity:
+    android.widget.ImageView logoView -> a
+    void onCreate(android.os.Bundle) -> onCreate
+com.mapabc.cn.apis.LoginActivity$1 -> com.mapabc.cn.apis.b:
+    com.mapabc.cn.apis.LoginActivity this$0 -> a
+    void onAnimationStart(android.view.animation.Animation) -> onAnimationStart
+    void onAnimationRepeat(android.view.animation.Animation) -> onAnimationRepeat
+    void onAnimationEnd(android.view.animation.Animation) -> onAnimationEnd
+com.mapabc.cn.apis.MainMenuView -> com.mapabc.cn.apis.MainMenuView:
+    android.app.AlertDialog menuDialog -> a
+    android.widget.GridView toolbarGrid -> b
+    android.view.View menuView -> c
+    android.content.Context myApp -> d
+    android.os.Handler mHandler -> j
+    android.webkit.WebView wv -> e
+    boolean isMore -> k
+    int TOOLBAR_ITEM_PAGEHOME -> l
+    int TOOLBAR_ITEM_BACK -> m
+    int TOOLBAR_ITEM_FORWARD -> n
+    int TOOLBAR_ITEM_REFRESH -> o
+    int TOOLBAR_ITEM_EXIT -> p
+    int[] menu_toolbar_image_array -> f
+    java.lang.String[] menu_toolbar_name_array -> g
+    void onCreate(android.os.Bundle) -> onCreate
+    android.widget.SimpleAdapter getMenuAdapter(java.lang.String[],int[]) -> a
+    boolean onKeyDown(int,android.view.KeyEvent) -> onKeyDown
+    void dialog() -> a
+com.mapabc.cn.apis.MainMenuView$1 -> com.mapabc.cn.apis.c:
+    com.mapabc.cn.apis.MainMenuView this$0 -> a
+    boolean onKey(android.content.DialogInterface,int,android.view.KeyEvent) -> onKey
+com.mapabc.cn.apis.MainMenuView$2 -> com.mapabc.cn.apis.d:
+    com.mapabc.cn.apis.MainMenuView this$0 -> a
+    android.widget.ProgressBar val$pbar -> b
+    boolean onJsAlert(android.webkit.WebView,java.lang.String,java.lang.String,android.webkit.JsResult) -> onJsAlert
+    void onProgressChanged(android.webkit.WebView,int) -> onProgressChanged
+com.mapabc.cn.apis.MainMenuView$2$1 -> com.mapabc.cn.apis.e:
+    com.mapabc.cn.apis.MainMenuView$2 this$1 -> a
+    android.webkit.JsResult val$result -> b
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.mapabc.cn.apis.MainMenuView$3 -> com.mapabc.cn.apis.f:
+    com.mapabc.cn.apis.MainMenuView this$0 -> a
+    void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
+com.mapabc.cn.apis.MainMenuView$5 -> com.mapabc.cn.apis.g:
+    com.mapabc.cn.apis.MainMenuView this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.mapabc.cn.apis.MainMenuView$6 -> com.mapabc.cn.apis.h:
+    com.mapabc.cn.apis.MainMenuView this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.mapabc.cn.apis.MainMenuView$JSInterface -> com.mapabc.cn.apis.i:
+    com.mapabc.cn.apis.MainMenuView this$0 -> a
+com.mapabc.cn.apis.geocoder.GeocoderDemo -> com.mapabc.cn.apis.geocoder.GeocoderDemo:
+    com.mapabc.mapapi.MapView mMapView -> a
+    android.widget.Button btn -> b
+    android.app.ProgressDialog progDialog -> c
+    com.mapabc.mapapi.Geocoder coder -> d
+    double mLat -> e
+    double mLon -> f
+    java.util.List address -> g
+    android.os.Handler handler -> j
+    void onCreate(android.os.Bundle) -> onCreate
+    void getAddress(double,double) -> a
+    android.app.ProgressDialog access$0(com.mapabc.cn.apis.geocoder.GeocoderDemo) -> a
+    java.util.List access$1(com.mapabc.cn.apis.geocoder.GeocoderDemo) -> b
+    double access$2(com.mapabc.cn.apis.geocoder.GeocoderDemo) -> c
+    double access$3(com.mapabc.cn.apis.geocoder.GeocoderDemo) -> d
+    com.mapabc.mapapi.Geocoder access$4(com.mapabc.cn.apis.geocoder.GeocoderDemo) -> e
+    void access$5(com.mapabc.cn.apis.geocoder.GeocoderDemo,java.util.List) -> a
+    android.os.Handler access$6(com.mapabc.cn.apis.geocoder.GeocoderDemo) -> f
+com.mapabc.cn.apis.geocoder.GeocoderDemo$1 -> com.mapabc.cn.apis.geocoder.a:
+    com.mapabc.cn.apis.geocoder.GeocoderDemo this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+com.mapabc.cn.apis.geocoder.GeocoderDemo$2 -> com.mapabc.cn.apis.geocoder.b:
+    com.mapabc.cn.apis.geocoder.GeocoderDemo this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.mapabc.cn.apis.geocoder.GeocoderDemo$3 -> com.mapabc.cn.apis.geocoder.c:
+    com.mapabc.cn.apis.geocoder.GeocoderDemo this$0 -> a
+    double val$mlat -> b
+    double val$mLon -> c
+    void run() -> run
+com.mapabc.cn.apis.location.LocationListenerProxy -> com.mapabc.cn.apis.location.a:
+    com.mapabc.mapapi.LocationManagerProxy mLocationManager -> a
+    android.location.LocationListener mListener -> b
+    boolean startListening$7e6f84d7(android.location.LocationListener,float) -> a
+    void stopListening() -> a
+    void onLocationChanged(android.location.Location) -> onLocationChanged
+    void onProviderDisabled(java.lang.String) -> onProviderDisabled
+    void onProviderEnabled(java.lang.String) -> onProviderEnabled
+    void onStatusChanged(java.lang.String,int,android.os.Bundle) -> onStatusChanged
+com.mapabc.cn.apis.location.LocationManager -> com.mapabc.cn.apis.location.LocationManager:
+    com.mapabc.mapapi.LocationManagerProxy locationManager -> a
+    com.mapabc.cn.apis.location.LocationListenerProxy mLocationListener -> b
+    android.widget.TextView myLocation -> c
+    void onCreate(android.os.Bundle) -> onCreate
+    void onPause() -> onPause
+    void onResume() -> onResume
+    void onStop() -> onStop
+    void onLocationChanged(android.location.Location) -> onLocationChanged
+    void onProviderDisabled(java.lang.String) -> onProviderDisabled
+    void onProviderEnabled(java.lang.String) -> onProviderEnabled
+    void onStatusChanged(java.lang.String,int,android.os.Bundle) -> onStatusChanged
+com.mapabc.cn.apis.location.MyLocation -> com.mapabc.cn.apis.location.MyLocation:
+    com.mapabc.mapapi.MapView mMapView -> a
+    com.mapabc.mapapi.MapController mMapController -> b
+    com.mapabc.mapapi.GeoPoint point -> c
+    com.mapabc.cn.apis.location.MyLocationOverlayProxy mLocationOverlay -> d
+    android.os.Handler handler -> e
+    void onCreate(android.os.Bundle) -> onCreate
+    void onPause() -> onPause
+    void onResume() -> onResume
+    com.mapabc.mapapi.MapController access$0(com.mapabc.cn.apis.location.MyLocation) -> a
+    com.mapabc.cn.apis.location.MyLocationOverlayProxy access$1(com.mapabc.cn.apis.location.MyLocation) -> b
+    android.os.Handler access$2(com.mapabc.cn.apis.location.MyLocation) -> c
+com.mapabc.cn.apis.location.MyLocation$1 -> com.mapabc.cn.apis.location.b:
+    com.mapabc.cn.apis.location.MyLocation this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+com.mapabc.cn.apis.location.MyLocation$2 -> com.mapabc.cn.apis.location.c:
+    com.mapabc.cn.apis.location.MyLocation this$0 -> a
+    void run() -> run
+com.mapabc.cn.apis.location.MyLocationOverlayProxy -> com.mapabc.cn.apis.location.d:
+    android.location.Location mLocation -> a
+    java.util.LinkedList mRunOnFirstFix -> b
+    boolean runOnFirstFix(java.lang.Runnable) -> a
+    void onLocationChanged(android.location.Location) -> onLocationChanged
+com.mapabc.cn.apis.mapview.GridMapView -> com.mapabc.cn.apis.mapview.GridMapView:
+    com.mapabc.mapapi.MapView mMapView -> a
+    com.mapabc.mapapi.MapController mMapController -> b
+    com.mapabc.mapapi.GeoPoint point -> c
+    void onCreate(android.os.Bundle) -> onCreate
+com.mapabc.cn.apis.mapview.VectorMapView -> com.mapabc.cn.apis.mapview.VectorMapView:
+    com.mapabc.mapapi.MapView mMapView -> a
+    com.mapabc.mapapi.MapController mMapController -> b
+    com.mapabc.mapapi.GeoPoint point -> c
+    void onCreate(android.os.Bundle) -> onCreate
+com.mapabc.cn.apis.poisearch.MyPoiOverlay -> com.mapabc.cn.apis.poisearch.a:
+    android.content.Context context -> a
+    android.graphics.drawable.Drawable drawable -> b
+    int number -> c
+    java.util.List poiItem -> d
+    android.view.LayoutInflater mInflater -> e
+    int height -> f
+    android.graphics.drawable.Drawable getPopupBackground() -> a
+    android.view.View getPopupView(com.mapabc.mapapi.PoiItem) -> a
+    void addToMap(com.mapabc.mapapi.MapView) -> a
+    com.mapabc.mapapi.MapView$LayoutParams getLayoutParam$2ec3f70e() -> b
+    android.graphics.drawable.Drawable getPopupMarker(com.mapabc.mapapi.PoiItem) -> b
+    boolean onTap(int) -> a
+com.mapabc.cn.apis.poisearch.MyPoiOverlay$1 -> com.mapabc.cn.apis.poisearch.b:
+    com.mapabc.cn.apis.poisearch.MyPoiOverlay this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.mapabc.cn.apis.poisearch.MySuggestionProvider -> com.mapabc.cn.apis.poisearch.MySuggestionProvider:
+    android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String) -> query
+com.mapabc.cn.apis.poisearch.PoiSearchDemo -> com.mapabc.cn.apis.poisearch.PoiSearchDemo:
+    com.mapabc.mapapi.MapView mMapView -> a
+    com.mapabc.mapapi.MapController mMapController -> b
+    com.mapabc.mapapi.GeoPoint point -> c
+    android.widget.TextView searchTextView -> d
+    java.lang.String query -> e
+    com.mapabc.mapapi.PoiPagedResult result -> f
+    android.app.ProgressDialog progDialog -> g
+    com.mapabc.mapapi.PoiOverlay poiOverlay -> j
+    android.os.Handler handler -> k
+    void onCreate(android.os.Bundle) -> onCreate
+    void onNewIntent(android.content.Intent) -> onNewIntent
+    com.mapabc.mapapi.PoiPagedResult access$0(com.mapabc.cn.apis.poisearch.PoiSearchDemo) -> a
+    com.mapabc.mapapi.MapController access$1(com.mapabc.cn.apis.poisearch.PoiSearchDemo) -> b
+    com.mapabc.mapapi.PoiOverlay access$2(com.mapabc.cn.apis.poisearch.PoiSearchDemo) -> c
+    void access$3(com.mapabc.cn.apis.poisearch.PoiSearchDemo,com.mapabc.mapapi.PoiOverlay) -> a
+    com.mapabc.mapapi.MapView access$4(com.mapabc.cn.apis.poisearch.PoiSearchDemo) -> d
+    android.app.ProgressDialog access$5(com.mapabc.cn.apis.poisearch.PoiSearchDemo) -> e
+    java.lang.String access$6(com.mapabc.cn.apis.poisearch.PoiSearchDemo) -> f
+    void access$7(com.mapabc.cn.apis.poisearch.PoiSearchDemo,com.mapabc.mapapi.PoiPagedResult) -> a
+    android.os.Handler access$8(com.mapabc.cn.apis.poisearch.PoiSearchDemo) -> g
+com.mapabc.cn.apis.poisearch.PoiSearchDemo$1 -> com.mapabc.cn.apis.poisearch.c:
+    com.mapabc.cn.apis.poisearch.PoiSearchDemo this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+com.mapabc.cn.apis.poisearch.PoiSearchDemo$2 -> com.mapabc.cn.apis.poisearch.d:
+    com.mapabc.cn.apis.poisearch.PoiSearchDemo this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.mapabc.cn.apis.poisearch.PoiSearchDemo$3 -> com.mapabc.cn.apis.poisearch.e:
+    com.mapabc.cn.apis.poisearch.PoiSearchDemo this$0 -> a
+    void run() -> run
+com.mapabc.cn.apis.route.RouteDemo -> com.mapabc.cn.apis.route.RouteDemo:
+    com.mapabc.mapapi.MapView mMapView -> a
+    com.mapabc.mapapi.MapController mMapController -> b
+    android.widget.Button drivingButton -> c
+    android.widget.Button transitButton -> d
+    android.widget.Button walkButton -> e
+    android.widget.ImageButton startImageButton -> f
+    android.widget.ImageButton endImageButton -> g
+    android.widget.AutoCompleteTextView startTextView -> j
+    android.widget.AutoCompleteTextView endTextView -> k
+    int mode -> l
+    android.app.ProgressDialog progDialog -> m
+    com.mapabc.mapapi.PoiPagedResult startSearchResult -> n
+    com.mapabc.mapapi.PoiPagedResult endSearchResult -> o
+    java.lang.String strStart -> p
+    java.lang.String strEnd -> q
+    com.mapabc.mapapi.GeoPoint startPoint -> r
+    com.mapabc.mapapi.GeoPoint endPoint -> s
+    com.mapabc.cn.apis.route.RouteDemo$MapPointOverlay overlay -> t
+    java.lang.String poiType -> u
+    java.util.List routeResult -> v
+    com.mapabc.mapapi.RouteOverlay ol -> w
+    android.os.Handler routeHandler -> x
+    void onCreate(android.os.Bundle) -> onCreate
+    void showToast(java.lang.String) -> a
+    void startSearchResult() -> a
+    void searchRouteResult(com.mapabc.mapapi.GeoPoint,com.mapabc.mapapi.GeoPoint) -> a
+    void onDrag(com.mapabc.mapapi.MapView,com.mapabc.mapapi.RouteOverlay,int,com.mapabc.mapapi.GeoPoint) -> a
+    void onDragBegin(com.mapabc.mapapi.MapView,com.mapabc.mapapi.RouteOverlay,int,com.mapabc.mapapi.GeoPoint) -> b
+    void onDragEnd(com.mapabc.mapapi.MapView,com.mapabc.mapapi.RouteOverlay,int,com.mapabc.mapapi.GeoPoint) -> c
+    void overlayToBack$34b40831(com.mapabc.mapapi.RouteOverlay) -> a
+    boolean onRouteEvent(com.mapabc.mapapi.MapView,com.mapabc.mapapi.RouteOverlay,int,int) -> a
+    boolean onKeyDown(int,android.view.KeyEvent) -> onKeyDown
+    com.mapabc.mapapi.PoiPagedResult access$0(com.mapabc.cn.apis.route.RouteDemo) -> a
+    android.app.ProgressDialog access$1(com.mapabc.cn.apis.route.RouteDemo) -> b
+    com.mapabc.mapapi.PoiPagedResult access$2(com.mapabc.cn.apis.route.RouteDemo) -> c
+    java.util.List access$3(com.mapabc.cn.apis.route.RouteDemo) -> d
+    com.mapabc.mapapi.RouteOverlay access$4(com.mapabc.cn.apis.route.RouteDemo) -> e
+    com.mapabc.mapapi.MapView access$5(com.mapabc.cn.apis.route.RouteDemo) -> f
+    void access$6(com.mapabc.cn.apis.route.RouteDemo,com.mapabc.mapapi.RouteOverlay) -> a
+    java.lang.String access$7(com.mapabc.cn.apis.route.RouteDemo) -> g
+    android.widget.AutoCompleteTextView access$8(com.mapabc.cn.apis.route.RouteDemo) -> h
+    void access$9(com.mapabc.cn.apis.route.RouteDemo,com.mapabc.mapapi.GeoPoint) -> a
+    android.widget.AutoCompleteTextView access$10(com.mapabc.cn.apis.route.RouteDemo) -> i
+    void access$11(com.mapabc.cn.apis.route.RouteDemo,com.mapabc.mapapi.GeoPoint) -> b
+    com.mapabc.cn.apis.route.RouteDemo$MapPointOverlay access$12(com.mapabc.cn.apis.route.RouteDemo) -> j
+    void access$13(com.mapabc.cn.apis.route.RouteDemo,int) -> a
+    android.widget.Button access$14(com.mapabc.cn.apis.route.RouteDemo) -> k
+    android.widget.Button access$15(com.mapabc.cn.apis.route.RouteDemo) -> l
+    void access$16(com.mapabc.cn.apis.route.RouteDemo,java.lang.String) -> a
+    void access$17(com.mapabc.cn.apis.route.RouteDemo,com.mapabc.mapapi.PoiPagedResult) -> a
+    android.os.Handler access$18(com.mapabc.cn.apis.route.RouteDemo) -> m
+    void access$19(com.mapabc.cn.apis.route.RouteDemo,com.mapabc.mapapi.PoiPagedResult) -> b
+    int access$20(com.mapabc.cn.apis.route.RouteDemo) -> n
+    void access$21(com.mapabc.cn.apis.route.RouteDemo,java.util.List) -> a
+com.mapabc.cn.apis.route.RouteDemo$1 -> com.mapabc.cn.apis.route.a:
+    com.mapabc.cn.apis.route.RouteDemo this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+com.mapabc.cn.apis.route.RouteDemo$2 -> com.mapabc.cn.apis.route.b:
+    com.mapabc.cn.apis.route.RouteDemo this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.mapabc.cn.apis.route.RouteDemo$3 -> com.mapabc.cn.apis.route.c:
+    com.mapabc.cn.apis.route.RouteDemo this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.mapabc.cn.apis.route.RouteDemo$4 -> com.mapabc.cn.apis.route.d:
+    com.mapabc.cn.apis.route.RouteDemo this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.mapabc.cn.apis.route.RouteDemo$5 -> com.mapabc.cn.apis.route.e:
+    com.mapabc.cn.apis.route.RouteDemo this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.mapabc.cn.apis.route.RouteDemo$6 -> com.mapabc.cn.apis.route.f:
+    com.mapabc.cn.apis.route.RouteDemo this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.mapabc.cn.apis.route.RouteDemo$7 -> com.mapabc.cn.apis.route.g:
+    com.mapabc.cn.apis.route.RouteDemo this$0 -> a
+    com.mapabc.mapapi.PoiSearch$Query val$startQuery -> b
+    void run() -> run
+com.mapabc.cn.apis.route.RouteDemo$8 -> com.mapabc.cn.apis.route.h:
+    com.mapabc.cn.apis.route.RouteDemo this$0 -> a
+    com.mapabc.mapapi.PoiSearch$Query val$endQuery -> b
+    void run() -> run
+com.mapabc.cn.apis.route.RouteDemo$9 -> com.mapabc.cn.apis.route.i:
+    com.mapabc.cn.apis.route.RouteDemo this$0 -> a
+    com.mapabc.mapapi.Route$FromAndTo val$fromAndTo -> b
+    void run() -> run
+com.mapabc.cn.apis.route.RouteDemo$MapPointOverlay -> com.mapabc.cn.apis.route.j:
+    android.content.Context context -> b
+    android.view.LayoutInflater inflater -> c
+    android.view.View popUpView -> d
+    com.mapabc.cn.apis.route.RouteDemo this$0 -> a
+    void draw(android.graphics.Canvas,com.mapabc.mapapi.MapView,boolean) -> a
+    boolean onTap(com.mapabc.mapapi.GeoPoint,com.mapabc.mapapi.MapView) -> a
+    android.view.View access$0(com.mapabc.cn.apis.route.RouteDemo$MapPointOverlay) -> a
+com.mapabc.cn.apis.route.RouteDemo$MapPointOverlay$1 -> com.mapabc.cn.apis.route.k:
+    com.mapabc.cn.apis.route.RouteDemo$MapPointOverlay this$1 -> a
+    com.mapabc.mapapi.GeoPoint val$point -> b
+    com.mapabc.mapapi.MapView val$view -> c
+    void onClick(android.view.View) -> onClick
+com.mapabc.cn.apis.service.GetMyLocationService -> com.mapabc.cn.apis.service.GetMyLocationService:
+    com.mapabc.mapapi.LocationManagerProxy locationManager -> c
+    com.mapabc.cn.apis.location.LocationListenerProxy mLocationListener -> d
+    java.lang.Double geoLat -> a
+    java.lang.Double geoLng -> b
+    boolean isrun -> e
+    com.mapabc.mapapi.MapController mMapController -> f
+    com.mapabc.cn.apis.location.MyLocationOverlayProxy mLocationOverlay -> g
+    android.os.Handler handler -> h
+    void onCreate() -> onCreate
+    android.os.IBinder onBind(android.content.Intent) -> onBind
+    void run() -> run
+    void onLocationChanged(android.location.Location) -> onLocationChanged
+    void onProviderDisabled(java.lang.String) -> onProviderDisabled
+    void onProviderEnabled(java.lang.String) -> onProviderEnabled
+    void onStatusChanged(java.lang.String,int,android.os.Bundle) -> onStatusChanged
+    com.mapabc.mapapi.MapController access$0(com.mapabc.cn.apis.service.GetMyLocationService) -> a
+    com.mapabc.cn.apis.location.MyLocationOverlayProxy access$1(com.mapabc.cn.apis.service.GetMyLocationService) -> b
+com.mapabc.cn.apis.service.GetMyLocationService$1 -> com.mapabc.cn.apis.service.a:
+    com.mapabc.cn.apis.service.GetMyLocationService this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+com.mapabc.cn.apis.traffic.TrafficDemo -> com.mapabc.cn.apis.traffic.TrafficDemo:
+    com.mapabc.mapapi.MapView mMapView -> a
+    com.mapabc.mapapi.MapController mMapController -> b
+    com.mapabc.mapapi.GeoPoint point -> c
+    android.widget.ImageButton trafficLayer -> d
+    boolean isTraffic -> e
+    void onCreate(android.os.Bundle) -> onCreate
+    android.app.Dialog onCreateDialog(int) -> onCreateDialog
+    com.mapabc.mapapi.MapView access$0(com.mapabc.cn.apis.traffic.TrafficDemo) -> a
+    void access$1(boolean) -> a
+com.mapabc.cn.apis.traffic.TrafficDemo$1 -> com.mapabc.cn.apis.traffic.a:
+    com.mapabc.cn.apis.traffic.TrafficDemo this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.mapabc.cn.apis.traffic.TrafficDemo$2 -> com.mapabc.cn.apis.traffic.b:
+    com.mapabc.cn.apis.traffic.TrafficDemo this$0 -> a
+    void onClick(android.content.DialogInterface,int,boolean) -> onClick
+com.mapabc.cn.apis.traffic.TrafficDemo$3 -> com.mapabc.cn.apis.traffic.c:
+    com.mapabc.cn.apis.traffic.TrafficDemo this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.mapabc.cn.apis.util.LocationUtil -> com.mapabc.cn.apis.a.a:
+    int triggerMinTime -> a
+    int triggerMinDistance -> b
+    boolean triggerFlag -> c
+    int timeoutConnection -> d
+    int timeoutSocket -> e
+    double getDistanceBetween_to_mile(java.lang.Double,java.lang.Double,java.lang.Double,java.lang.Double) -> a
+com.mapabc.cn.apis.util.MapUtil -> com.mapabc.cn.apis.a.b:
+    void setMapZoom(com.mapabc.mapapi.MapController,double) -> a
+com.mapabc.mapapi.A -> com.mapabc.mapapi.a:
+    void onTransComplete(com.mapabc.mapapi.PhoneStateManager$c) -> a
+com.mapabc.mapapi.B -> com.mapabc.mapapi.b:
+    com.mapabc.mapapi.Segment a(com.mapabc.mapapi.GeoPoint,com.mapabc.mapapi.GeoPoint) -> a
+    int f() -> a
+    com.mapabc.mapapi.Segment b(org.w3c.dom.Node) -> c
+    void a(com.mapabc.mapapi.Route) -> a
+    java.lang.String[] e() -> b
+    java.lang.String g() -> c
+    void a(java.util.ArrayList) -> a
+    void a(org.w3c.dom.Node,java.util.ArrayList) -> a
+    com.mapabc.mapapi.Route a(org.w3c.dom.Node) -> a
+com.mapabc.mapapi.BusSegment -> com.mapabc.mapapi.c:
+    java.lang.String mLine -> a
+    com.mapabc.mapapi.GeoPoint[] mPassStopPos -> b
+    java.lang.String[] mPassStopName -> c
+    java.lang.String mFirstStation -> d
+    java.lang.String mLastStation -> e
+    int getStopNumber() -> a
+    java.lang.String getOnStationName() -> b
+    java.lang.String getOffStationName() -> c
+com.mapabc.mapapi.C -> com.mapabc.mapapi.d:
+    boolean b -> b
+    void a() -> a
+    com.mapabc.mapapi.K a(java.lang.Object,java.net.Proxy,java.lang.String,java.lang.String) -> a
+    void a(java.lang.Object) -> a
+com.mapabc.mapapi.ClsCachFileManager -> com.mapabc.mapapi.e:
+    java.util.List a -> c
+    int iTotalByteCount -> a
+    int iCurCashTileCount -> b
+    android.content.Context b -> d
+    boolean c -> e
+    java.lang.Thread d -> f
+    java.io.FileOutputStream e -> g
+    java.io.RandomAccessFile f -> h
+    java.io.BufferedOutputStream g -> i
+    java.io.FileInputStream h -> j
+    java.io.FileOutputStream i -> k
+    java.io.BufferedOutputStream j -> l
+    com.mapabc.mapapi.d$c k -> m
+    long a(long,long,long) -> a
+    long a(long,long,java.lang.String) -> a
+    boolean addIndex(com.mapabc.mapapi.ar,boolean) -> a
+    boolean addTileToLocal(com.mapabc.mapapi.n) -> a
+    int a(byte[]) -> a
+    int addIndexData(byte[]) -> b
+    byte[] readCachData(int,int) -> a
+    void saveCachFile() -> a
+    com.mapabc.mapapi.n getTileFromCach(com.mapabc.mapapi.n$a) -> a
+    long getUniqueLongKey(int,int,int) -> a
+    java.lang.String getUniqueStringKey(int,int,int) -> b
+    java.io.FileInputStream access$000(com.mapabc.mapapi.ClsCachFileManager) -> a
+    boolean access$102$7037560e(com.mapabc.mapapi.ClsCachFileManager) -> b
+    java.io.RandomAccessFile access$200(com.mapabc.mapapi.ClsCachFileManager) -> c
+    void access$300(com.mapabc.mapapi.ClsCachFileManager,byte[]) -> a
+    boolean access$100(com.mapabc.mapapi.ClsCachFileManager) -> d
+    com.mapabc.mapapi.d$c access$400(com.mapabc.mapapi.ClsCachFileManager) -> e
+com.mapabc.mapapi.ClsCachFileManager$1 -> com.mapabc.mapapi.f:
+    com.mapabc.mapapi.ClsCachFileManager a -> a
+    void run() -> run
+com.mapabc.mapapi.ConfigableConst -> com.mapabc.mapapi.g:
+    int a -> a
+    int b -> b
+    int c -> c
+    int d -> d
+    java.lang.String[] k -> k
+    java.lang.String[] l -> l
+    java.lang.String[] m -> m
+    android.graphics.Bitmap[] n -> n
+    android.content.Context o -> o
+    java.lang.String e -> e
+    java.lang.String f -> f
+    int g -> g
+    int h -> h
+    boolean i -> i
+    boolean j -> j
+    void a(android.content.Context) -> a
+    void a() -> a
+    android.graphics.Bitmap a(int) -> a
+    android.graphics.Bitmap b(android.content.Context,java.lang.String) -> b
+    android.graphics.drawable.Drawable a(android.content.Context,java.lang.String) -> a
+    android.graphics.drawable.NinePatchDrawable a(android.content.Context,java.lang.String,byte[],android.graphics.Rect) -> a
+com.mapabc.mapapi.ConfigableConst$ENUM_ID -> com.mapabc.mapapi.h:
+    com.mapabc.mapapi.ConfigableConst$ENUM_ID enomap -> a
+    com.mapabc.mapapi.ConfigableConst$ENUM_ID ewatermark -> b
+    com.mapabc.mapapi.ConfigableConst$ENUM_ID emarker -> c
+    com.mapabc.mapapi.ConfigableConst$ENUM_ID ecompassback -> d
+    com.mapabc.mapapi.ConfigableConst$ENUM_ID ecommpasspoint -> e
+    com.mapabc.mapapi.ConfigableConst$ENUM_ID eloc1 -> f
+    com.mapabc.mapapi.ConfigableConst$ENUM_ID eloc2 -> g
+    com.mapabc.mapapi.ConfigableConst$ENUM_ID ezoomin -> h
+    com.mapabc.mapapi.ConfigableConst$ENUM_ID ezoomout -> i
+    com.mapabc.mapapi.ConfigableConst$ENUM_ID ezoomindisable -> j
+    com.mapabc.mapapi.ConfigableConst$ENUM_ID ezoomoutdisable -> k
+    com.mapabc.mapapi.ConfigableConst$ENUM_ID ezoominselected -> l
+    com.mapabc.mapapi.ConfigableConst$ENUM_ID ezoomoutselected -> m
+    com.mapabc.mapapi.ConfigableConst$ENUM_ID[] a -> n
+    com.mapabc.mapapi.ConfigableConst$ENUM_ID[] values() -> values
+    com.mapabc.mapapi.ConfigableConst$ENUM_ID valueOf(java.lang.String) -> valueOf
+com.mapabc.mapapi.Convert -> com.mapabc.mapapi.i:
+    int getInt(byte[],int) -> a
+    short getShort(byte[],int) -> b
+    void moveArray$5c8eef6e(byte[],int,byte[],int) -> a
+com.mapabc.mapapi.D -> com.mapabc.mapapi.j:
+    int a -> a
+    long b -> b
+    long c -> c
+    int a() -> a
+com.mapabc.mapapi.DriveWalkSegment -> com.mapabc.mapapi.k:
+    int mActionCode -> a
+    java.lang.String mActionDes -> b
+    java.lang.String mRoadName -> c
+com.mapabc.mapapi.E -> com.mapabc.mapapi.l:
+    com.mapabc.mapapi.E$a d -> d
+    java.lang.String a -> a
+    java.lang.String b -> b
+    java.net.Proxy c -> c
+    void c(java.lang.Object) -> a
+    void b(java.lang.Object) -> b
+    java.lang.Object a(java.lang.Object) -> c
+    com.mapabc.mapapi.E$a a(com.mapabc.mapapi.E) -> a
+com.mapabc.mapapi.E$a -> com.mapabc.mapapi.m:
+    com.mapabc.mapapi.E a -> a
+    void handleMessage(android.os.Message) -> handleMessage
+com.mapabc.mapapi.E$b -> com.mapabc.mapapi.n:
+    java.lang.Object a -> a
+    com.mapabc.mapapi.E b -> b
+    void run() -> run
+com.mapabc.mapapi.F -> com.mapabc.mapapi.o:
+    java.util.List a -> a
+    android.net.wifi.WifiManager b -> b
+    android.content.Context c -> c
+    com.mapabc.mapapi.PhoneStateManager d -> d
+    boolean e -> e
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+    void a() -> a
+    void b() -> b
+    java.lang.String toString() -> toString
+com.mapabc.mapapi.G -> com.mapabc.mapapi.p:
+    int a -> a
+    com.mapabc.mapapi.K a(java.lang.Object,java.net.Proxy,java.lang.String,java.lang.String) -> a
+    com.mapabc.mapapi.W b() -> b
+    void a() -> a
+    void a(java.lang.Object) -> a
+com.mapabc.mapapi.GeoPoint -> com.mapabc.mapapi.q:
+    double[] PixelsPerLonDegree -> a
+    double[] PixelsPerLatRadian -> b
+    com.mapabc.mapapi.GeoPoint$b[] BitmapOrigo -> c
+    long a -> d
+    long b -> e
+    double c -> f
+    double d -> g
+    void setLongtitudeAutonavi(double) -> a
+    void setLatitudeAutonavi(double) -> b
+    boolean equals(java.lang.Object) -> equals
+    java.lang.String toString() -> toString
+    int getLongitudeE6() -> a
+    int getLatitudeE6() -> b
+    long getlongLongitudeE6() -> c
+    long getlongLatitudeE6() -> d
+    double getLongitudeAutoNavi() -> e
+    double getLatitudeAutoNavi() -> f
+    com.mapabc.mapapi.GeoPoint Copy() -> g
+com.mapabc.mapapi.GeoPoint$a -> com.mapabc.mapapi.r:
+    double a -> a
+    double b -> b
+com.mapabc.mapapi.GeoPoint$b -> com.mapabc.mapapi.s:
+    int a -> a
+    int b -> b
+com.mapabc.mapapi.Geocoder -> com.mapabc.mapapi.t:
+    java.lang.String a -> a
+    java.lang.String b -> b
+    android.content.Context c -> c
+    java.util.List getFromLocation$2079a8d9(double,double) -> a
+com.mapabc.mapapi.GlobalStore -> com.mapabc.mapapi.u:
+    com.mapabc.mapapi.GlobalStore a -> m
+    boolean b -> n
+    com.mapabc.mapapi.PhoneStateManager$b sFalseData -> a
+    java.lang.String manufacturer -> b
+    java.lang.String model -> c
+    int SDKversion -> d
+    java.lang.String device -> e
+    java.lang.String IMEI -> f
+    android.telephony.TelephonyManager mPhone -> g
+    java.util.LinkedList radioDatas -> h
+    java.util.LinkedList downloadInfo -> i
+    java.util.ArrayList centers -> j
+    com.mapabc.mapapi.GlobalStore$a aPhoneStateListener -> k
+    boolean c -> o
+    int d -> p
+    int e -> q
+    boolean hasInit -> l
+    boolean issIsRuning() -> a
+    void setsIsRuning(boolean) -> a
+    int getsViewWidth() -> b
+    void setsViewWidth(int) -> a
+    int getsViewHeight() -> c
+    void setsViewHeight(int) -> b
+    void addCenter(com.mapabc.mapapi.GeoPoint,int) -> a
+    java.lang.String centersToStringAndClear() -> d
+    com.mapabc.mapapi.GlobalStore getInstance() -> e
+    void setEnable(boolean) -> b
+    void initDeviceInfo(android.content.Context) -> a
+    com.mapabc.mapapi.aT getLogParam$13b307ae() -> f
+    com.mapabc.mapapi.PhoneStateManager$b getCurTower() -> g
+    java.lang.String getManufacturer() -> h
+    java.lang.String getModel() -> i
+    int getSDKVersion() -> j
+    java.lang.String getIMEI() -> k
+    boolean access$000(com.mapabc.mapapi.GlobalStore) -> a
+com.mapabc.mapapi.GlobalStore$a -> com.mapabc.mapapi.v:
+    com.mapabc.mapapi.GlobalStore a -> a
+    void onCellLocationChanged(android.telephony.CellLocation) -> onCellLocationChanged
+com.mapabc.mapapi.GlobalStore$b -> com.mapabc.mapapi.w:
+    com.mapabc.mapapi.GeoPoint a -> a
+    int b -> b
+com.mapabc.mapapi.H -> com.mapabc.mapapi.x:
+    boolean meetsCriteria(android.location.Criteria) -> a
+com.mapabc.mapapi.I -> com.mapabc.mapapi.y:
+    com.mapabc.mapapi.K a(java.lang.Object,java.net.Proxy,java.lang.String,java.lang.String) -> a
+    void a(java.lang.Object) -> a
+com.mapabc.mapapi.ItemizedOverlay -> com.mapabc.mapapi.z:
+    boolean a -> a
+    android.graphics.drawable.Drawable b -> b
+    android.graphics.drawable.Drawable c -> c
+    int d -> d
+    com.mapabc.mapapi.ItemizedOverlay$a e -> e
+    com.mapabc.mapapi.ItemizedOverlay$OnFocusChangeListener f -> f
+    int g -> g
+    int h -> h
+    android.graphics.drawable.Drawable boundCenterBottom(android.graphics.drawable.Drawable) -> a
+    android.graphics.drawable.Drawable boundCenter(android.graphics.drawable.Drawable) -> b
+    android.graphics.drawable.Drawable a(android.graphics.drawable.Drawable,com.mapabc.mapapi.ItemizedOverlay$b) -> a
+    com.mapabc.mapapi.OverlayItem createItem(int) -> b
+    int size() -> c
+    void populate() -> d
+    com.mapabc.mapapi.OverlayItem getItem(int) -> c
+    void setFocus(com.mapabc.mapapi.OverlayItem) -> a
+    boolean onTap(com.mapabc.mapapi.GeoPoint,com.mapabc.mapapi.MapView) -> a
+    boolean hitTest$6244ba19(android.graphics.drawable.Drawable,int,int) -> a
+    boolean onTrackballEvent(android.view.MotionEvent,com.mapabc.mapapi.MapView) -> a
+    boolean onTouchEvent(android.view.MotionEvent,com.mapabc.mapapi.MapView) -> b
+    boolean onTap(int) -> a
+    void draw(android.graphics.Canvas,com.mapabc.mapapi.MapView,boolean) -> a
+    void a(android.graphics.Canvas,com.mapabc.mapapi.MapView,boolean,com.mapabc.mapapi.OverlayItem,int) -> a
+    android.graphics.drawable.Drawable a(com.mapabc.mapapi.ItemizedOverlay) -> a
+com.mapabc.mapapi.ItemizedOverlay$OnFocusChangeListener -> com.mapabc.mapapi.aa:
+com.mapabc.mapapi.ItemizedOverlay$a -> com.mapabc.mapapi.ab:
+    java.util.ArrayList a -> a
+    java.util.ArrayList b -> b
+    com.mapabc.mapapi.ItemizedOverlay c -> c
+    int a() -> a
+    int a(com.mapabc.mapapi.OverlayItem) -> a
+    com.mapabc.mapapi.OverlayItem a(int) -> a
+    int b(int) -> b
+    boolean a(com.mapabc.mapapi.GeoPoint,com.mapabc.mapapi.MapView) -> a
+    com.mapabc.mapapi.GeoPoint$b a(com.mapabc.mapapi.OverlayItem,com.mapabc.mapapi.Projection,android.graphics.Point) -> a
+    int compare(java.lang.Object,java.lang.Object) -> compare
+com.mapabc.mapapi.ItemizedOverlay$b -> com.mapabc.mapapi.ac:
+    com.mapabc.mapapi.ItemizedOverlay$b a -> a
+    com.mapabc.mapapi.ItemizedOverlay$b b -> b
+    com.mapabc.mapapi.ItemizedOverlay$b c -> c
+    com.mapabc.mapapi.ItemizedOverlay$b[] d -> d
+    com.mapabc.mapapi.ItemizedOverlay$b[] values() -> values
+    com.mapabc.mapapi.ItemizedOverlay$b valueOf(java.lang.String) -> valueOf
+com.mapabc.mapapi.J -> com.mapabc.mapapi.ad:
+    com.mapabc.mapapi.RouteMessageHandler a -> a
+    int b -> b
+    int c -> c
+    com.mapabc.mapapi.MapView d -> d
+    com.mapabc.mapapi.RouteOverlay e -> e
+    com.mapabc.mapapi.MapView a(com.mapabc.mapapi.J) -> a
+    com.mapabc.mapapi.RouteOverlay b(com.mapabc.mapapi.J) -> b
+    int c(com.mapabc.mapapi.J) -> c
+    int d(com.mapabc.mapapi.J) -> d
+    com.mapabc.mapapi.RouteMessageHandler e(com.mapabc.mapapi.J) -> e
+com.mapabc.mapapi.J$1 -> com.mapabc.mapapi.ae:
+    com.mapabc.mapapi.J a -> a
+    void onClick(android.view.View) -> onClick
+com.mapabc.mapapi.K -> com.mapabc.mapapi.af:
+    java.net.Proxy a -> b
+    java.lang.Object e -> a
+    int b -> c
+    int c -> d
+    int d -> e
+    int f -> f
+    java.lang.String g -> g
+    java.lang.String h -> h
+    java.lang.String i -> i
+    int f() -> a
+    java.lang.String[] e() -> b
+    java.lang.Object c(java.io.InputStream) -> a
+    java.lang.String g() -> c
+    java.lang.String a(java.lang.String,boolean) -> a
+    java.lang.String a() -> h
+    java.lang.Object h() -> d
+    java.lang.Object i() -> e
+    java.lang.Object j() -> f
+    java.lang.Object b() -> i
+    java.io.InputStream a(java.io.InputStream) -> c
+    java.lang.String d(java.io.InputStream) -> b
+    java.lang.String k() -> g
+com.mapabc.mapapi.L -> com.mapabc.mapapi.ag:
+    boolean a -> a
+    java.lang.Runnable f -> f
+    java.lang.Runnable g -> g
+    android.os.Handler h -> h
+    com.mapabc.mapapi.at b -> b
+    com.mapabc.mapapi.Q c -> c
+    com.mapabc.mapapi.af i -> i
+    void b_() -> a_
+    int c() -> c
+    java.lang.Object a(java.util.ArrayList,java.net.Proxy) -> a
+    java.lang.Object a(java.util.ArrayList) -> a
+    void a(java.lang.Object) -> a
+    java.lang.Runnable a(com.mapabc.mapapi.L) -> a
+    android.os.Handler b(com.mapabc.mapapi.L) -> b
+com.mapabc.mapapi.LocationManagerProxy -> com.mapabc.mapapi.ah:
+    android.location.LocationManager a -> a
+    com.mapabc.mapapi.a b -> b
+    java.util.Hashtable c -> c
+    void stopGpsReport() -> a
+    void startGpsReport() -> b
+    java.util.List getProviders$30a3ae68() -> c
+    com.mapabc.mapapi.LocationProviderProxy getProvider(java.lang.String) -> b
+    void requestLocationUpdates(java.lang.String,long,float,android.location.LocationListener) -> a
+    boolean isProviderEnabled(java.lang.String) -> a
+    java.lang.String getBestProvider$6b1bb3df(android.location.Criteria) -> a
+    boolean addGpsStatusListener(android.location.GpsStatus$Listener) -> a
+    android.location.GpsStatus getGpsStatus$2c5bb5f() -> d
+    void removeGpsStatusListener(android.location.GpsStatus$Listener) -> b
+    void removeUpdates(android.location.LocationListener) -> a
+com.mapabc.mapapi.LocationProviderProxy -> com.mapabc.mapapi.ai:
+    android.location.LocationManager a -> a
+    java.lang.String b -> b
+    com.mapabc.mapapi.LocationProviderProxy a(android.location.LocationManager,java.lang.String) -> a
+    boolean meetsCriteria(android.location.Criteria) -> a
+com.mapabc.mapapi.M -> com.mapabc.mapapi.aj:
+    com.mapabc.mapapi.MapView$EnumMapProjection a -> a
+com.mapabc.mapapi.MapActivity -> com.mapabc.mapapi.MapActivity:
+    com.mapabc.mapapi.d a -> a
+    com.mapabc.mapapi.MapView b -> b
+    int c -> c
+    int MAP_MODE_VECTOR -> h
+    int MAP_MODE_BITMAP -> i
+    void a(com.mapabc.mapapi.d) -> a
+    com.mapabc.mapapi.d a() -> b
+    void setMapMode(int) -> a
+    int getMapMode() -> c
+    void onCreate(android.os.Bundle) -> onCreate
+    void onDestroy() -> onDestroy
+    void onNewIntent(android.content.Intent) -> onNewIntent
+    void onPause() -> onPause
+    void onResume() -> onResume
+    void onRestart() -> onRestart
+    void onStop() -> onStop
+    void onConfigurationChanged(android.content.res.Configuration) -> onConfigurationChanged
+    void a(com.mapabc.mapapi.MapView,android.content.Context,java.lang.String,java.lang.String) -> a
+com.mapabc.mapapi.MapController -> com.mapabc.mapapi.ak:
+    com.mapabc.mapapi.d a -> a
+    boolean b -> b
+    com.mapabc.mapapi.MapController$a c -> c
+    com.mapabc.mapapi.y d -> d
+    boolean onKey(android.view.View,int,android.view.KeyEvent) -> onKey
+    void setCenter(com.mapabc.mapapi.GeoPoint) -> a
+    int setZoom(int) -> a
+    boolean zoomIn() -> a
+    boolean zoomOut() -> b
+    boolean zoomInFixing(int,int) -> a
+    void animateTo(com.mapabc.mapapi.GeoPoint) -> b
+    void scrollBy(int,int) -> b
+    boolean a(int,int,boolean,boolean) -> a
+    int a(int) -> b
+    com.mapabc.mapapi.d a(com.mapabc.mapapi.MapController) -> a
+com.mapabc.mapapi.MapController$a -> com.mapabc.mapapi.al:
+    java.util.LinkedList a -> a
+    java.util.ArrayList b -> b
+    com.mapabc.mapapi.aQ c -> c
+    com.mapabc.mapapi.MapController d -> d
+    void a(int,int,int,boolean,boolean) -> a
+    void onAnimationStart(android.view.animation.Animation) -> onAnimationStart
+    void onAnimationRepeat(android.view.animation.Animation) -> onAnimationRepeat
+    void onAnimationEnd(android.view.animation.Animation) -> onAnimationEnd
+com.mapabc.mapapi.MapView -> com.mapabc.mapapi.MapView:
+    com.mapabc.mapapi.ZoomButtonsController mZoomButtonsController -> a
+    com.mapabc.mapapi.MapActivity a -> u
+    com.mapabc.mapapi.d b -> v
+    com.mapabc.mapapi.MapView$b c -> w
+    com.mapabc.mapapi.MapController d -> x
+    com.mapabc.mapapi.MapView$a e -> y
+    boolean f -> z
+    com.mapabc.mapapi.MapView$g mRouteCtrl -> b
+    int[] g -> A
+    com.mapabc.minimap.map.vmap.NativeMap nativeMap -> c
+    android.graphics.Bitmap VmapBitMap -> d
+    boolean VMapMode -> e
+    boolean VisInited -> f
+    boolean h -> B
+    com.mapabc.minimap.map.vmap.NativeMapEngine nativeMapEngine -> g
+    java.nio.ByteBuffer tilepixelsBuffer -> h
+    android.graphics.Bitmap tileBitMap -> i
+    com.mapabc.mapapi.aV connectionManager -> j
+    com.mapabc.mapapi.Y renderPool -> k
+    com.mapabc.mapapi.aD tileDownloadCtrl -> l
+    int width -> m
+    int height -> n
+    int centerX -> o
+    int centerY -> p
+    int mapLevel -> q
+    int mapAngle -> r
+    android.content.Context i -> C
+    boolean isInited -> s
+    boolean bfirstDrawed -> t
+    com.mapabc.mapapi.ZoomButtonsController getZoomButtonsController() -> a
+    void initEnviornment(android.content.Context,java.lang.String,java.lang.String) -> a
+    void setEnabled(boolean) -> setEnabled
+    com.mapabc.mapapi.MapView$a getZoomMgr() -> b
+    com.mapabc.mapapi.d getMediator() -> c
+    com.mapabc.mapapi.MapView$b getCanvas() -> d
+    com.mapabc.mapapi.MapController getController() -> e
+    java.util.List getOverlays() -> f
+    int getZoomLevel() -> g
+    int getMaxZoomLevel() -> h
+    int getMinZoomLevel() -> i
+    com.mapabc.mapapi.Projection getProjection() -> j
+    void setZoomButtonFront() -> k
+    void setBuiltInZoomControls$1385ff() -> l
+    void onFocusChanged(boolean,int,android.graphics.Rect) -> onFocusChanged
+    com.mapabc.mapapi.MapView$LayoutParams generateDefaultLayoutParams() -> m
+    void setTraffic(boolean) -> a
+    void closeMapview() -> n
+    void onDraw(android.graphics.Canvas) -> onDraw
+    void dispatchDraw(android.graphics.Canvas) -> dispatchDraw
+    boolean checkLayoutParams(android.view.ViewGroup$LayoutParams) -> checkLayoutParams
+    void onLayout(boolean,int,int,int,int) -> onLayout
+    android.view.ViewGroup$LayoutParams generateLayoutParams(android.view.ViewGroup$LayoutParams) -> generateLayoutParams
+    android.view.ViewGroup$LayoutParams generateLayoutParams(android.util.AttributeSet) -> generateLayoutParams
+    void onRestoreInstanceState(android.os.Parcelable) -> onRestoreInstanceState
+    android.os.Parcelable onSaveInstanceState() -> onSaveInstanceState
+    void onAttachedToWindow() -> onAttachedToWindow
+    void onDetachedFromWindow() -> onDetachedFromWindow
+    void computeScroll() -> computeScroll
+    void setClickable(boolean) -> setClickable
+    void onWindowFocusChanged(boolean) -> onWindowFocusChanged
+    boolean onKeyDown(int,android.view.KeyEvent) -> onKeyDown
+    boolean onKeyUp(int,android.view.KeyEvent) -> onKeyUp
+    boolean onTrackballEvent(android.view.MotionEvent) -> onTrackballEvent
+    boolean onTouchEvent(android.view.MotionEvent) -> onTouchEvent
+    void onMeasure(int,int) -> onMeasure
+    void onSizeChanged(int,int,int,int) -> onSizeChanged
+    void Vinit() -> v
+    void VdestoryMap() -> w
+    boolean isGridInScreen(java.lang.String) -> a
+    boolean isAGridsInScreen(java.util.ArrayList) -> a
+    void loadBMtilesData2(java.util.ArrayList,boolean) -> a
+    void sendMapDataRequest(java.util.ArrayList) -> b
+    void paintVectorMap(android.graphics.Canvas) -> a
+    int getGridLevelOff(int) -> a
+    int a(int) -> b
+    void getScreenPntBy20Pixel(int,int,int,android.graphics.Point) -> a
+    void getPixelPnt(android.graphics.Point,com.mapabc.mapapi.VMapGeoPoint) -> a
+    void setCornerPixelPnt(com.mapabc.mapapi.VMapGeoPoint,com.mapabc.mapapi.VMapGeoPoint) -> a
+    java.util.ArrayList getCurScreenGridList() -> o
+    boolean isInCurScreenRenderGridList(java.lang.String) -> b
+    java.net.HttpURLConnection getConnection(java.lang.String) -> c
+    void onWindowVisibilityChanged(int) -> onWindowVisibilityChanged
+    android.view.ViewGroup$LayoutParams generateDefaultLayoutParams() -> generateDefaultLayoutParams
+    com.mapabc.mapapi.MapActivity access$400(com.mapabc.mapapi.MapView) -> a
+    com.mapabc.mapapi.MapView$a access$500(com.mapabc.mapapi.MapView) -> b
+    com.mapabc.mapapi.d access$800(com.mapabc.mapapi.MapView) -> c
+    int[] access$1500() -> p
+    int[] access$1600() -> q
+    int[] access$1700() -> r
+    int[] access$1800() -> s
+    int[] access$1900() -> t
+    int[] access$2000() -> u
+    com.mapabc.mapapi.MapController access$2100(com.mapabc.mapapi.MapView) -> d
+com.mapabc.mapapi.MapView$EnumMapProjection -> com.mapabc.mapapi.am:
+    com.mapabc.mapapi.MapView$EnumMapProjection projection_900913 -> a
+    com.mapabc.mapapi.MapView$EnumMapProjection projection_custBeijing54 -> b
+    com.mapabc.mapapi.MapView$EnumMapProjection[] a -> c
+    com.mapabc.mapapi.MapView$EnumMapProjection[] values() -> values
+    com.mapabc.mapapi.MapView$EnumMapProjection valueOf(java.lang.String) -> valueOf
+com.mapabc.mapapi.MapView$LayoutParams -> com.mapabc.mapapi.MapView$LayoutParams:
+    int mode -> a
+    com.mapabc.mapapi.GeoPoint point -> b
+    int x -> c
+    int y -> d
+    int alignment -> e
+com.mapabc.mapapi.MapView$ReticleDrawMode -> com.mapabc.mapapi.an:
+    com.mapabc.mapapi.MapView$ReticleDrawMode DRAW_RETICLE_NEVER -> a
+    com.mapabc.mapapi.MapView$ReticleDrawMode DRAW_RETICLE_OVER -> b
+    com.mapabc.mapapi.MapView$ReticleDrawMode DRAW_RETICLE_UNDER -> c
+    com.mapabc.mapapi.MapView$ReticleDrawMode[] a -> d
+    com.mapabc.mapapi.MapView$ReticleDrawMode[] values() -> values
+    com.mapabc.mapapi.MapView$ReticleDrawMode valueOf(java.lang.String) -> valueOf
+com.mapabc.mapapi.MapView$a -> com.mapabc.mapapi.ao:
+    com.mapabc.mapapi.MapView$c b -> b
+    com.mapabc.mapapi.MapView$c c -> c
+    com.mapabc.mapapi.s d -> d
+    boolean e -> e
+    android.os.Handler f -> f
+    long g -> g
+    java.lang.Runnable h -> h
+    com.mapabc.mapapi.MapView a -> a
+    boolean a(android.view.View) -> a
+    void a(boolean) -> a
+    void a() -> a
+    void b(boolean) -> b
+    void c() -> b
+    void d() -> c
+    void a(com.mapabc.mapapi.MapView$a,int,int) -> a
+    long a(com.mapabc.mapapi.MapView$a) -> a
+    java.lang.Runnable b(com.mapabc.mapapi.MapView$a) -> b
+    android.os.Handler c(com.mapabc.mapapi.MapView$a) -> c
+com.mapabc.mapapi.MapView$b -> com.mapabc.mapapi.ap:
+    android.graphics.Point a -> a
+    android.view.GestureDetector b -> b
+    com.mapabc.mapapi.MultiTouchGestureDetector c -> c
+    java.util.ArrayList d -> d
+    android.widget.Scroller e -> e
+    int f -> f
+    int g -> g
+    android.graphics.Matrix h -> h
+    float i -> i
+    boolean j -> j
+    float k -> k
+    float l -> l
+    float m -> m
+    float n -> n
+    int o -> o
+    int p -> p
+    int q -> q
+    int r -> r
+    boolean s -> s
+    java.lang.Runnable t -> t
+    com.mapabc.mapapi.MapView u -> u
+    void onDraw(android.graphics.Canvas) -> onDraw
+    float a() -> a
+    void b() -> b
+    boolean a(android.view.MotionEvent) -> a
+    void c() -> d
+    boolean b(android.view.MotionEvent) -> b
+    boolean onDown(android.view.MotionEvent) -> onDown
+    boolean onFling(android.view.MotionEvent,android.view.MotionEvent,float,float) -> onFling
+    void onLongPress(android.view.MotionEvent) -> onLongPress
+    boolean onScroll(android.view.MotionEvent,android.view.MotionEvent,float,float) -> onScroll
+    void onShowPress(android.view.MotionEvent) -> onShowPress
+    boolean onSingleTapUp(android.view.MotionEvent) -> onSingleTapUp
+    void a(android.view.GestureDetector$OnGestureListener) -> a
+    void b(android.view.GestureDetector$OnGestureListener) -> b
+    boolean onDrag(float,float) -> a
+    boolean onScale(float) -> a
+    boolean onScale(android.graphics.Matrix) -> a
+    boolean endScale$c3e7f40(float) -> b
+    boolean startScale$46c6ef76() -> c
+    boolean onDoubleTap(android.view.MotionEvent) -> onDoubleTap
+    boolean onDoubleTapEvent(android.view.MotionEvent) -> onDoubleTapEvent
+    boolean onSingleTapConfirmed(android.view.MotionEvent) -> onSingleTapConfirmed
+    android.widget.Scroller a(com.mapabc.mapapi.MapView$b) -> a
+    int b(com.mapabc.mapapi.MapView$b) -> b
+    int c(com.mapabc.mapapi.MapView$b) -> c
+    int a(com.mapabc.mapapi.MapView$b,int) -> a
+    int b(com.mapabc.mapapi.MapView$b,int) -> b
+    void d(com.mapabc.mapapi.MapView$b) -> d
+    boolean e(com.mapabc.mapapi.MapView$b) -> e
+com.mapabc.mapapi.MapView$c -> com.mapabc.mapapi.aq:
+    int b -> b
+    com.mapabc.mapapi.MapView a -> a
+    void a(boolean) -> a
+    int a(com.mapabc.mapapi.MapView$c) -> a
+com.mapabc.mapapi.MapView$c$1 -> com.mapabc.mapapi.ar:
+    com.mapabc.mapapi.MapView$c a -> a
+    void onClick(android.view.View) -> onClick
+com.mapabc.mapapi.MapView$d -> com.mapabc.mapapi.as:
+    android.widget.LinearLayout b -> b
+    android.widget.TextView c -> c
+    boolean d -> d
+    android.graphics.drawable.Drawable e -> e
+    com.mapabc.mapapi.p f -> f
+    android.view.animation.Animation g -> g
+    com.mapabc.mapapi.MapView$d$b h -> h
+    com.mapabc.mapapi.MapView a -> a
+    void d() -> d
+    void a() -> a
+    void b() -> b
+    void c() -> c
+    void onAnimationEnd(android.view.animation.Animation) -> onAnimationEnd
+    void onAnimationRepeat(android.view.animation.Animation) -> onAnimationRepeat
+    void onAnimationStart(android.view.animation.Animation) -> onAnimationStart
+    com.mapabc.mapapi.MapView$d$b a(com.mapabc.mapapi.MapView$d) -> a
+    com.mapabc.mapapi.p b(com.mapabc.mapapi.MapView$d) -> b
+com.mapabc.mapapi.MapView$d$1 -> com.mapabc.mapapi.at:
+    com.mapabc.mapapi.MapView$d a -> a
+    void onClick(android.view.View) -> onClick
+com.mapabc.mapapi.MapView$d$a -> com.mapabc.mapapi.au:
+    boolean shouldOverrideUrlLoading(android.webkit.WebView,java.lang.String) -> shouldOverrideUrlLoading
+com.mapabc.mapapi.MapView$d$b -> com.mapabc.mapapi.av:
+com.mapabc.mapapi.MapView$e -> com.mapabc.mapapi.aw:
+    int a -> a
+    int b -> b
+    int compare(java.lang.Object,java.lang.Object) -> compare
+com.mapabc.mapapi.MapView$f -> com.mapabc.mapapi.ax:
+    void a(int) -> a
+com.mapabc.mapapi.MapView$g -> com.mapabc.mapapi.ay:
+    android.widget.ImageView[] a -> a
+    android.graphics.drawable.Drawable[] b -> b
+    com.mapabc.mapapi.MapView$f c -> c
+    boolean d -> d
+    int e -> e
+    int f -> f
+    int g -> g
+    int h -> h
+    int i -> i
+    int j -> j
+    int k -> k
+    android.view.View$OnClickListener l -> l
+    com.mapabc.mapapi.MapView m -> m
+    void b(int,int) -> b
+    void a(int,int) -> a
+    void a(boolean,com.mapabc.mapapi.MapView$f) -> a
+    void a(boolean) -> a
+    void b(boolean) -> b
+    void c(boolean) -> c
+    void d(boolean) -> d
+    boolean a() -> a
+    void a(int,boolean) -> a
+    android.widget.ImageView[] a(com.mapabc.mapapi.MapView$g) -> a
+    com.mapabc.mapapi.MapView$f b(com.mapabc.mapapi.MapView$g) -> b
+com.mapabc.mapapi.MultiTouchGestureDetector -> com.mapabc.mapapi.az:
+    com.mapabc.mapapi.MultiTouchGestureDetector$OnGestureListener a -> a
+    int b -> b
+    android.graphics.Matrix c -> c
+    android.graphics.Matrix d -> d
+    android.graphics.PointF e -> e
+    android.graphics.PointF f -> f
+    android.graphics.PointF g -> g
+    float h -> h
+    float i -> i
+    boolean j -> j
+    java.lang.reflect.Method k -> k
+    java.lang.reflect.Method l -> l
+    boolean m -> m
+    boolean n -> n
+    com.mapabc.mapapi.MultiTouchGestureDetector newInstance$2f0dae01(com.mapabc.mapapi.MultiTouchGestureDetector$OnGestureListener) -> a
+    boolean onTouchEvent(android.view.MotionEvent) -> a
+    void a(android.view.MotionEvent) -> b
+    boolean a() -> a
+    java.lang.reflect.Method b() -> b
+    java.lang.reflect.Method c() -> c
+com.mapabc.mapapi.MultiTouchGestureDetector$OnGestureListener -> com.mapabc.mapapi.ba:
+    boolean onDrag(float,float) -> a
+    boolean onScale(float) -> a
+    boolean onScale(android.graphics.Matrix) -> a
+    boolean startScale$46c6ef76() -> c
+    boolean endScale$c3e7f40(float) -> b
+com.mapabc.mapapi.MyLocationOverlay -> com.mapabc.mapapi.bb:
+    com.mapabc.mapapi.d a -> a
+    com.mapabc.mapapi.h b -> b
+    com.mapabc.mapapi.aJ c -> c
+    boolean d -> d
+    boolean e -> e
+    float f -> f
+    com.mapabc.mapapi.ah g -> g
+    com.mapabc.mapapi.w h -> h
+    java.util.LinkedList i -> i
+    boolean enableMyLocation() -> a
+    void disableMyLocation() -> b
+    void onLocationChanged(android.location.Location) -> onLocationChanged
+    void onProviderDisabled(java.lang.String) -> onProviderDisabled
+    void onProviderEnabled(java.lang.String) -> onProviderEnabled
+    void onStatusChanged(java.lang.String,int,android.os.Bundle) -> onStatusChanged
+    com.mapabc.mapapi.GeoPoint getMyLocation() -> c
+    com.mapabc.mapapi.GeoPoint a(android.location.Location) -> a
+    boolean runOnFirstFix(java.lang.Runnable) -> a
+    void onSensorChanged(int,float[]) -> onSensorChanged
+    void onAccuracyChanged(int,int) -> onAccuracyChanged
+    boolean draw$5143c3a(android.graphics.Canvas,com.mapabc.mapapi.MapView,boolean) -> b
+    boolean drawSupressed$5143c3a$4950f604(android.graphics.Canvas) -> a
+    boolean drawAfterSupressed$5143c3a$60bb56b8(android.graphics.Canvas) -> b
+    void drawMyLocation$40d72e02(android.graphics.Canvas,com.mapabc.mapapi.MapView,android.location.Location,com.mapabc.mapapi.GeoPoint) -> a
+    void drawCompass(android.graphics.Canvas,float) -> a
+    boolean onTap(com.mapabc.mapapi.GeoPoint,com.mapabc.mapapi.MapView) -> a
+com.mapabc.mapapi.Overlay -> com.mapabc.mapapi.bc:
+    boolean onTrackballEvent(android.view.MotionEvent,com.mapabc.mapapi.MapView) -> a
+    boolean onTouchEvent(android.view.MotionEvent,com.mapabc.mapapi.MapView) -> b
+    boolean onTap(com.mapabc.mapapi.GeoPoint,com.mapabc.mapapi.MapView) -> a
+    void draw(android.graphics.Canvas,com.mapabc.mapapi.MapView,boolean) -> a
+    boolean draw$5143c3a(android.graphics.Canvas,com.mapabc.mapapi.MapView,boolean) -> b
+    void a(android.graphics.Canvas,android.graphics.drawable.Drawable,int,int) -> a
+com.mapabc.mapapi.OverlayItem -> com.mapabc.mapapi.bd:
+    com.mapabc.mapapi.GeoPoint mPoint -> a
+    java.lang.String mTitle -> b
+    java.lang.String mSnippet -> c
+    android.graphics.drawable.Drawable mMarker -> d
+    android.graphics.drawable.Drawable getMarker(int) -> a
+    java.lang.String getTitle() -> a
+    java.lang.String getSnippet() -> b
+    com.mapabc.mapapi.GeoPoint getPoint() -> c
+com.mapabc.mapapi.P -> com.mapabc.mapapi.be:
+    java.lang.String[] e() -> b
+    int f() -> a
+    java.lang.String g() -> c
+    java.lang.Object c(java.io.InputStream) -> a
+com.mapabc.mapapi.PhoneStateManager -> com.mapabc.mapapi.bf:
+    boolean a -> c
+    android.telephony.TelephonyManager b -> d
+    android.location.LocationListener c -> e
+    java.util.LinkedList d -> f
+    android.location.LocationManager e -> g
+    com.mapabc.mapapi.F f -> h
+    java.lang.String g -> i
+    java.lang.String h -> j
+    android.content.Context i -> k
+    com.mapabc.mapapi.PhoneStateManager$a j -> l
+    double gpsLatitude -> a
+    double gpsLongitude -> b
+    long k -> m
+    int l -> n
+    void enableTrans(boolean) -> a
+    void onWifiInfoChanged() -> a
+    void onCellLocationChanged(android.telephony.CellLocation) -> onCellLocationChanged
+    void stopGPSListener() -> b
+    void startGpsReport() -> c
+    void onServiceStateChanged(android.telephony.ServiceState) -> onServiceStateChanged
+    void onTransComplete(com.mapabc.mapapi.PhoneStateManager$c) -> a
+    int a(com.mapabc.mapapi.PhoneStateManager$b) -> a
+    void a(int) -> a
+    long a(com.mapabc.mapapi.PhoneStateManager,long) -> a
+com.mapabc.mapapi.PhoneStateManager$a -> com.mapabc.mapapi.bg:
+    com.mapabc.mapapi.PhoneStateManager a -> a
+    void onLocationChanged(android.location.Location) -> onLocationChanged
+    void onProviderDisabled(java.lang.String) -> onProviderDisabled
+    void onProviderEnabled(java.lang.String) -> onProviderEnabled
+    void onStatusChanged(java.lang.String,int,android.os.Bundle) -> onStatusChanged
+com.mapabc.mapapi.PhoneStateManager$b -> com.mapabc.mapapi.bh:
+    int a -> a
+    int b -> b
+    int c -> c
+    int i -> i
+    int d -> d
+    int e -> e
+    java.lang.String f -> f
+    double g -> g
+    double h -> h
+    void a(android.telephony.TelephonyManager,android.telephony.CellLocation) -> a
+    boolean equals(java.lang.Object) -> equals
+    java.lang.String toString() -> toString
+    int hashCode() -> hashCode
+com.mapabc.mapapi.PhoneStateManager$c -> com.mapabc.mapapi.bi:
+    com.mapabc.mapapi.PhoneStateManager$b a -> a
+    android.location.Location b -> b
+com.mapabc.mapapi.PoiItem -> com.mapabc.mapapi.bj:
+    java.lang.String a -> e
+    java.lang.String b -> f
+    java.lang.String c -> g
+    java.lang.String d -> h
+    java.lang.String e -> i
+    java.lang.String getTypeDes() -> d
+    void setTypeDes(java.lang.String) -> a
+    java.lang.String getTel() -> e
+    void setTel(java.lang.String) -> b
+    void setAdCode(java.lang.String) -> c
+    boolean equals(java.lang.Object) -> equals
+    int hashCode() -> hashCode
+    java.lang.String toString() -> toString
+    java.lang.String getTypeCode() -> f
+    void setTypeCode(java.lang.String) -> d
+com.mapabc.mapapi.PoiOverlay -> com.mapabc.mapapi.bk:
+    com.mapabc.mapapi.ax a -> a
+    java.util.ArrayList b -> b
+    boolean c -> c
+    com.mapabc.mapapi.MapView d -> d
+    boolean e -> e
+    int size() -> c
+    void addToMap(com.mapabc.mapapi.MapView) -> a
+    boolean removeFromMap() -> e
+    android.graphics.drawable.Drawable getPopupMarker(com.mapabc.mapapi.PoiItem) -> b
+    boolean showPopupWindow(int) -> c
+    boolean onTap(int) -> a
+    android.graphics.drawable.Drawable getPopupBackground() -> a
+    com.mapabc.mapapi.MapView$LayoutParams getLayoutParam$2ec3f70e() -> b
+    android.view.View getPopupView(com.mapabc.mapapi.PoiItem) -> a
+    android.text.Spanned a(com.mapabc.mapapi.PoiItem) -> c
+    android.text.Spanned b(com.mapabc.mapapi.PoiItem) -> d
+    android.graphics.drawable.Drawable a(android.graphics.drawable.Drawable,int,int) -> b
+    com.mapabc.mapapi.OverlayItem createItem(int) -> b
+com.mapabc.mapapi.PoiPagedResult -> com.mapabc.mapapi.bl:
+    int a -> a
+    java.util.ArrayList b -> b
+    com.mapabc.mapapi.b c -> c
+    com.mapabc.mapapi.PoiPagedResult a(com.mapabc.mapapi.b,java.util.ArrayList) -> a
+    void a(java.util.ArrayList) -> a
+    boolean a$134632() -> b
+    java.util.List getPage$22f3aa59() -> a
+com.mapabc.mapapi.PoiSearch -> com.mapabc.mapapi.bm:
+    com.mapabc.mapapi.PoiSearch$SearchBound a -> a
+    com.mapabc.mapapi.PoiSearch$Query b -> b
+    android.content.Context c -> c
+    java.lang.String d -> d
+    com.mapabc.mapapi.PoiPagedResult searchPOI() -> a
+com.mapabc.mapapi.PoiSearch$Query -> com.mapabc.mapapi.bn:
+    java.lang.String a -> a
+    java.lang.String b -> b
+    java.lang.String c -> c
+    java.lang.String getQueryString() -> a
+    java.lang.String getCategory() -> b
+    java.lang.String getCity() -> c
+com.mapabc.mapapi.PoiSearch$SearchBound -> com.mapabc.mapapi.bo:
+    com.mapabc.mapapi.GeoPoint a -> a
+    com.mapabc.mapapi.GeoPoint b -> b
+    int c -> c
+    com.mapabc.mapapi.GeoPoint d -> d
+    java.lang.String e -> e
+    com.mapabc.mapapi.GeoPoint getLowerLeft() -> a
+    com.mapabc.mapapi.GeoPoint getUpperRight() -> b
+    com.mapabc.mapapi.GeoPoint getCenter() -> c
+    int getRange() -> d
+    java.lang.String getShape() -> e
+com.mapabc.mapapi.Projection -> com.mapabc.mapapi.bp:
+    android.graphics.Point toPixels$3d6cf219(com.mapabc.mapapi.GeoPoint) -> a
+    com.mapabc.mapapi.GeoPoint fromPixels(int,int) -> a
+    float metersToEquatorPixels(float) -> a
+com.mapabc.mapapi.Q -> com.mapabc.mapapi.bq:
+    java.util.LinkedList a -> a
+    java.util.concurrent.Semaphore b -> b
+    boolean c -> c
+    void a() -> a
+    void a(java.util.List) -> a
+    void c() -> c
+    java.util.ArrayList b() -> b
+    java.util.ArrayList a(int) -> a
+com.mapabc.mapapi.R -> com.mapabc.mapapi.br:
+    android.graphics.Bitmap a -> a
+    android.graphics.Point a() -> a
+    android.graphics.Rect b() -> b
+    boolean draw$5143c3a(android.graphics.Canvas,com.mapabc.mapapi.MapView,boolean) -> b
+com.mapabc.mapapi.ResUtil -> com.mapabc.mapapi.bs:
+    byte[] decodeAssetResData(android.content.Context,java.lang.String) -> a
+com.mapabc.mapapi.Route -> com.mapabc.mapapi.bt:
+    java.lang.String mStartPlace -> a
+    java.lang.String mTargetPlace -> b
+    java.util.List mSegs -> c
+    com.mapabc.mapapi.Route$d a -> d
+    com.mapabc.mapapi.GeoPoint b -> e
+    com.mapabc.mapapi.GeoPoint c -> f
+    int d -> g
+    int getMode() -> a
+    java.util.List calculateRoute(com.mapabc.mapapi.MapActivity,com.mapabc.mapapi.Route$FromAndTo,int) -> a
+    java.lang.String a(double,double,java.net.Proxy,java.lang.String,java.lang.String) -> a
+    com.mapabc.mapapi.GeoPoint getStartPos() -> b
+    com.mapabc.mapapi.GeoPoint getTargetPos() -> c
+    int getStepCount() -> d
+    com.mapabc.mapapi.Segment getStep(int) -> a
+    boolean isDrive(int) -> b
+    boolean isBus(int) -> d
+    java.lang.String a(int) -> c
+com.mapabc.mapapi.Route$FromAndTo -> com.mapabc.mapapi.bu:
+    com.mapabc.mapapi.GeoPoint a -> a
+    com.mapabc.mapapi.GeoPoint b -> b
+    int c -> c
+    void transFromOrTo$5f0bd6b2(android.content.Context,java.lang.String,com.mapabc.mapapi.GeoPoint,com.mapabc.mapapi.GeoPoint) -> a
+    com.mapabc.mapapi.GeoPoint$a a(android.content.Context,java.lang.String,com.mapabc.mapapi.GeoPoint) -> a
+com.mapabc.mapapi.Route$a -> com.mapabc.mapapi.bv:
+    android.graphics.drawable.Drawable a(int) -> a
+com.mapabc.mapapi.Route$c -> com.mapabc.mapapi.bw:
+    com.mapabc.mapapi.Route a -> a
+    android.graphics.Paint b(int) -> b
+    android.text.Spanned d(int) -> c
+com.mapabc.mapapi.Route$d -> com.mapabc.mapapi.bx:
+    com.mapabc.mapapi.Route a -> a
+    android.text.Spanned d(int) -> c
+    android.graphics.Paint b(int) -> b
+    int e(int) -> d
+    int f(int) -> e
+    android.view.View a(com.mapabc.mapapi.MapView,android.content.Context,com.mapabc.mapapi.RouteMessageHandler,com.mapabc.mapapi.RouteOverlay,int) -> a
+    com.mapabc.mapapi.GeoPoint g(int) -> f
+    android.view.View a(android.content.Context,int) -> a
+    android.graphics.drawable.Drawable a(int) -> a
+com.mapabc.mapapi.Route$e -> com.mapabc.mapapi.by:
+    com.mapabc.mapapi.Route a -> a
+    android.graphics.Paint b(int) -> b
+    android.text.Spanned d(int) -> c
+    int e(int) -> d
+    int f(int) -> e
+    android.view.View a(com.mapabc.mapapi.MapView,android.content.Context,com.mapabc.mapapi.RouteMessageHandler,com.mapabc.mapapi.RouteOverlay,int) -> a
+    android.graphics.drawable.Drawable a(int) -> a
+com.mapabc.mapapi.RouteMessageHandler -> com.mapabc.mapapi.bz:
+    boolean onRouteEvent(com.mapabc.mapapi.MapView,com.mapabc.mapapi.RouteOverlay,int,int) -> a
+    void onDragBegin(com.mapabc.mapapi.MapView,com.mapabc.mapapi.RouteOverlay,int,com.mapabc.mapapi.GeoPoint) -> b
+    void onDragEnd(com.mapabc.mapapi.MapView,com.mapabc.mapapi.RouteOverlay,int,com.mapabc.mapapi.GeoPoint) -> c
+    void onDrag(com.mapabc.mapapi.MapView,com.mapabc.mapapi.RouteOverlay,int,com.mapabc.mapapi.GeoPoint) -> a
+com.mapabc.mapapi.RouteOverlay -> com.mapabc.mapapi.ca:
+    com.mapabc.mapapi.MapActivity mContext -> a
+    com.mapabc.mapapi.Route mRoute -> b
+    java.util.List b -> d
+    com.mapabc.mapapi.ax c -> e
+    boolean d -> f
+    boolean e -> g
+    com.mapabc.mapapi.RouteOverlay$a a -> c
+    java.util.List f -> h
+    com.mapabc.mapapi.MapView g -> i
+    boolean h -> j
+    com.mapabc.mapapi.Route getRoute() -> a
+    boolean onTrackballEvent(android.view.MotionEvent,com.mapabc.mapapi.MapView) -> a
+    boolean onTouchEvent(android.view.MotionEvent,com.mapabc.mapapi.MapView) -> b
+    void draw(android.graphics.Canvas,com.mapabc.mapapi.MapView,boolean) -> a
+    void addToMap(com.mapabc.mapapi.MapView) -> a
+    void registerRouteMessage(com.mapabc.mapapi.RouteMessageHandler) -> a
+    void takeDefaultAction(com.mapabc.mapapi.MapView,int,int) -> a
+    boolean removeFromMap(com.mapabc.mapapi.MapView) -> b
+    void closePopupWindow() -> b
+    void restoreOverlay(com.mapabc.mapapi.MapView) -> c
+    com.mapabc.mapapi.GeoPoint getStartPos() -> c
+    com.mapabc.mapapi.GeoPoint getEndPos() -> d
+    boolean a(com.mapabc.mapapi.MapView,android.graphics.Point,int) -> a
+    android.graphics.Point a(com.mapabc.mapapi.MapView,com.mapabc.mapapi.GeoPoint) -> a
+    com.mapabc.mapapi.aM a(int) -> a
+    java.util.List a(com.mapabc.mapapi.RouteOverlay) -> a
+    boolean b(com.mapabc.mapapi.RouteOverlay) -> b
+    com.mapabc.mapapi.aM a(com.mapabc.mapapi.RouteOverlay,int) -> a
+com.mapabc.mapapi.RouteOverlay$a -> com.mapabc.mapapi.cb:
+    com.mapabc.mapapi.RouteOverlay a -> a
+    boolean onRouteEvent(com.mapabc.mapapi.MapView,com.mapabc.mapapi.RouteOverlay,int,int) -> a
+    boolean a(com.mapabc.mapapi.MapView,int,com.mapabc.mapapi.GeoPoint) -> a
+    void onDragBegin(com.mapabc.mapapi.MapView,com.mapabc.mapapi.RouteOverlay,int,com.mapabc.mapapi.GeoPoint) -> b
+    void onDragEnd(com.mapabc.mapapi.MapView,com.mapabc.mapapi.RouteOverlay,int,com.mapabc.mapapi.GeoPoint) -> c
+    void onDrag(com.mapabc.mapapi.MapView,com.mapabc.mapapi.RouteOverlay,int,com.mapabc.mapapi.GeoPoint) -> a
+com.mapabc.mapapi.S -> com.mapabc.mapapi.cc:
+    com.mapabc.mapapi.D a -> a
+    java.util.ArrayList b -> b
+com.mapabc.mapapi.Segment -> com.mapabc.mapapi.cd:
+    com.mapabc.mapapi.GeoPoint[] mShapes -> f
+    com.mapabc.mapapi.Route mRoute -> g
+    int mLength -> h
+    com.mapabc.mapapi.GeoPoint a -> a
+    com.mapabc.mapapi.GeoPoint b -> b
+    java.lang.String strTimeConsume -> i
+    com.mapabc.mapapi.GeoPoint getFirstPoint() -> d
+    com.mapabc.mapapi.GeoPoint getLastPoint() -> e
+com.mapabc.mapapi.T -> com.mapabc.mapapi.ce:
+    int a -> a
+    java.lang.String b -> b
+    long c -> c
+    int d -> d
+    int e -> e
+    java.lang.String toString() -> toString
+com.mapabc.mapapi.U -> com.mapabc.mapapi.cf:
+    com.mapabc.mapapi.d d -> d
+    android.content.Context e -> e
+    void b_() -> a_
+    void d() -> d
+    void e() -> e
+    void a() -> a
+com.mapabc.mapapi.V -> com.mapabc.mapapi.cg:
+    com.mapabc.mapapi.MapView$b a -> a
+    void run() -> run
+com.mapabc.mapapi.VMapGeoPoint -> com.mapabc.mapapi.ch:
+    int x -> a
+    int y -> b
+com.mapabc.mapapi.W -> com.mapabc.mapapi.ci:
+    com.mapabc.mapapi.I d -> d
+    void c(java.lang.Object) -> a
+    void b(java.lang.Object) -> b
+    java.lang.Object a(java.lang.Object) -> c
+com.mapabc.mapapi.X -> com.mapabc.mapapi.cj:
+    java.lang.Object a() -> a
+    java.lang.Object b() -> b
+    void clear() -> clear
+com.mapabc.mapapi.Y -> com.mapabc.mapapi.ck:
+    boolean a -> a
+    com.mapabc.mapapi.MapView c -> c
+    java.util.ArrayList b -> b
+    void run() -> run
+    boolean a(java.lang.String) -> a
+com.mapabc.mapapi.Z -> com.mapabc.mapapi.cl:
+    com.mapabc.mapapi.ad a -> a
+    android.graphics.drawable.Drawable b -> b
+    android.graphics.drawable.Drawable a(android.graphics.drawable.Drawable) -> a
+    void a(android.graphics.Canvas) -> a
+    void a(android.graphics.drawable.Drawable,android.graphics.drawable.Drawable) -> a
+com.mapabc.mapapi.ZoomButtonsController -> com.mapabc.mapapi.cm:
+    com.mapabc.mapapi.MapView$a a -> a
+    android.view.ViewGroup b -> b
+    com.mapabc.mapapi.ZoomButtonsController$OnZoomListener c -> c
+    com.mapabc.mapapi.ZoomButtonsController$OnZoomListener getOnZoomListener() -> a
+    boolean onTouch(android.view.View,android.view.MotionEvent) -> onTouch
+com.mapabc.mapapi.ZoomButtonsController$OnZoomListener -> com.mapabc.mapapi.cn:
+com.mapabc.mapapi.a -> com.mapabc.mapapi.co:
+    java.lang.String a -> a
+    java.lang.String b -> b
+    android.content.Context c -> c
+    android.telephony.TelephonyManager d -> d
+    java.util.LinkedList e -> e
+    java.util.LinkedList f -> f
+    com.mapabc.mapapi.PhoneStateManager g -> g
+    void a() -> a
+    boolean c() -> b
+    void a(android.location.LocationListener) -> a
+    void b(android.location.LocationListener) -> b
+    void d() -> c
+    void e() -> d
+    void a(java.lang.Object,int) -> a
+    void onLocationChanged(android.location.Location) -> onLocationChanged
+    void onProviderDisabled(java.lang.String) -> onProviderDisabled
+    void onProviderEnabled(java.lang.String) -> onProviderEnabled
+    void onStatusChanged(java.lang.String,int,android.os.Bundle) -> onStatusChanged
+com.mapabc.mapapi.a$a -> com.mapabc.mapapi.cp:
+    android.location.LocationListener a -> a
+    android.os.Looper b -> b
+    boolean equals(java.lang.Object) -> equals
+    int hashCode() -> hashCode
+com.mapabc.mapapi.a$b -> com.mapabc.mapapi.cq:
+com.mapabc.mapapi.a$c -> com.mapabc.mapapi.cr:
+    int a() -> a
+    void handleMessage(android.os.Message) -> handleMessage
+com.mapabc.mapapi.a$d -> com.mapabc.mapapi.cs:
+    int a() -> a
+    void handleMessage(android.os.Message) -> handleMessage
+com.mapabc.mapapi.a$e -> com.mapabc.mapapi.ct:
+    android.location.LocationListener a -> a
+    java.lang.Object b -> b
+    com.mapabc.mapapi.a$e a(android.os.Looper,android.location.LocationListener,java.lang.Object,int) -> a
+    int a() -> a
+    void b() -> b
+com.mapabc.mapapi.a$f -> com.mapabc.mapapi.cu:
+    android.app.PendingIntent a -> a
+    boolean equals(java.lang.Object) -> equals
+    int hashCode() -> hashCode
+com.mapabc.mapapi.a$g -> com.mapabc.mapapi.cv:
+    int a() -> a
+    void handleMessage(android.os.Message) -> handleMessage
+com.mapabc.mapapi.aA -> com.mapabc.mapapi.cw:
+    void a_() -> f
+com.mapabc.mapapi.aB -> com.mapabc.mapapi.cx:
+    float k -> k
+    float l -> l
+    float m -> m
+    float n -> n
+    boolean onTouchEvent(android.view.MotionEvent) -> a
+    float b(android.view.MotionEvent) -> c
+    void a(android.graphics.PointF,android.view.MotionEvent) -> a
+com.mapabc.mapapi.aC -> com.mapabc.mapapi.cy:
+    com.mapabc.mapapi.Segment b(org.w3c.dom.Node) -> c
+    void a(com.mapabc.mapapi.Route) -> a
+    java.lang.String[] e() -> b
+    java.lang.String g() -> c
+    java.util.ArrayList b(java.io.InputStream) -> c
+    com.mapabc.mapapi.Route a(org.w3c.dom.Node) -> a
+    java.lang.Object c(java.io.InputStream) -> a
+com.mapabc.mapapi.aD -> com.mapabc.mapapi.cz:
+    java.util.Hashtable d -> d
+    int a -> a
+    com.mapabc.mapapi.MapView e -> e
+    long b -> b
+    boolean c -> c
+    void a(java.lang.String) -> a
+    boolean b(java.lang.String) -> b
+    void c(java.lang.String) -> c
+    void a() -> a
+    void run() -> run
+com.mapabc.mapapi.aE -> com.mapabc.mapapi.da:
+    void a() -> a
+    com.mapabc.mapapi.K a(java.lang.Object,java.net.Proxy,java.lang.String,java.lang.String) -> a
+com.mapabc.mapapi.aF -> com.mapabc.mapapi.db:
+    android.graphics.Point a() -> a
+com.mapabc.mapapi.aG -> com.mapabc.mapapi.dc:
+    boolean f -> f
+    com.mapabc.mapapi.z g -> g
+    com.mapabc.mapapi.z h -> h
+    com.mapabc.mapapi.k i -> i
+    com.mapabc.mapapi.k j -> j
+    void a(boolean) -> a
+    void e() -> e
+    void b_() -> a_
+    void b(java.util.ArrayList) -> b
+    void d() -> d
+    void a() -> a
+    void a_() -> f
+    boolean a(com.mapabc.mapapi.n) -> a
+    int c() -> c
+    java.util.ArrayList c(java.util.ArrayList) -> c
+    void a(java.lang.Object) -> a
+    java.lang.Object a(java.util.ArrayList) -> a
+    java.lang.Object a(java.util.ArrayList,java.net.Proxy) -> a
+com.mapabc.mapapi.aH -> com.mapabc.mapapi.dd:
+    android.os.Handler c -> c
+    int d -> d
+    boolean e -> e
+    int a -> a
+    int b -> b
+    java.lang.Runnable f -> f
+    void c() -> a
+    void d() -> b
+    void e() -> c
+    void f() -> d
+    boolean g() -> e
+    void h() -> f
+    void a(com.mapabc.mapapi.aH) -> a
+    android.os.Handler b(com.mapabc.mapapi.aH) -> b
+    android.os.Handler c(com.mapabc.mapapi.aH) -> c
+com.mapabc.mapapi.aI -> com.mapabc.mapapi.de:
+    int b -> a
+    com.mapabc.mapapi.GeoPoint c -> b
+com.mapabc.mapapi.aJ -> com.mapabc.mapapi.df:
+    android.hardware.SensorManager a -> a
+    android.hardware.SensorListener b -> b
+    void c() -> c
+    void e() -> e
+    void d() -> d
+    void f() -> f
+    boolean g() -> g
+com.mapabc.mapapi.aK -> com.mapabc.mapapi.dg:
+    java.lang.String a -> b
+    java.lang.String b -> c
+    java.lang.String c -> d
+    int d -> e
+    java.util.ArrayList f -> f
+    java.util.ArrayList g -> g
+    java.util.ArrayList h -> h
+    boolean i -> i
+    boolean j -> j
+    java.lang.String k -> k
+    java.lang.String[] e() -> b
+    int f() -> a
+    void a(org.w3c.dom.Node,java.util.ArrayList) -> a
+    java.lang.String a(org.w3c.dom.Node) -> a
+    void a(org.w3c.dom.Node,java.lang.String) -> a
+    void a(java.util.ArrayList,java.util.ArrayList) -> a
+    void a(java.util.ArrayList) -> a
+    java.lang.String g() -> c
+com.mapabc.mapapi.aL -> com.mapabc.mapapi.dh:
+    android.graphics.Paint b -> a
+    com.mapabc.mapapi.GeoPoint[] c -> b
+    void a(android.graphics.Canvas,com.mapabc.mapapi.MapView,boolean) -> a
+    android.graphics.Path a(java.util.ArrayList) -> a
+    boolean a(android.graphics.Point,android.graphics.Point) -> a
+    int a(com.mapabc.mapapi.MapView,int,java.util.ArrayList) -> a
+com.mapabc.mapapi.aM -> com.mapabc.mapapi.di:
+    android.graphics.drawable.Drawable d -> d
+    com.mapabc.mapapi.RouteMessageHandler e -> e
+    boolean f -> f
+    boolean g -> g
+    int h -> h
+    int i -> i
+    boolean j -> j
+    void a(android.graphics.Canvas,com.mapabc.mapapi.MapView,boolean) -> a
+    boolean b(com.mapabc.mapapi.MapView,android.graphics.Point) -> b
+    boolean a(android.view.MotionEvent,com.mapabc.mapapi.MapView) -> a
+    void a(com.mapabc.mapapi.GeoPoint) -> a
+com.mapabc.mapapi.aN -> com.mapabc.mapapi.dj:
+    com.mapabc.mapapi.MapView$a a -> a
+    void run() -> run
+com.mapabc.mapapi.aO -> com.mapabc.mapapi.dk:
+    android.graphics.drawable.Drawable a -> a
+    android.graphics.drawable.Drawable b -> b
+    int c -> c
+    int d -> d
+    float e -> e
+    com.mapabc.mapapi.ad f -> f
+    android.graphics.drawable.Drawable a(android.graphics.Bitmap) -> a
+    android.graphics.Bitmap a(float) -> a
+    void a(android.graphics.Canvas) -> a
+com.mapabc.mapapi.aP -> com.mapabc.mapapi.dl:
+    android.graphics.drawable.Drawable a -> a
+    android.graphics.drawable.Drawable b -> b
+    android.graphics.drawable.Drawable c -> c
+    android.graphics.drawable.Drawable d -> d
+    android.graphics.drawable.Drawable e -> e
+    android.graphics.drawable.Drawable f -> f
+    android.graphics.drawable.Drawable g -> g
+    android.graphics.drawable.Drawable h -> h
+    android.graphics.Paint i -> i
+    android.graphics.Paint j -> j
+    android.graphics.Paint k -> k
+    boolean l -> l
+    void a(android.content.Context) -> a
+    android.graphics.drawable.Drawable b(android.content.Context) -> b
+    void a(android.content.Context,int) -> a
+com.mapabc.mapapi.aQ -> com.mapabc.mapapi.dm:
+    android.view.animation.Animation$AnimationListener e -> e
+    com.mapabc.mapapi.MapView f -> f
+    float g -> g
+    float h -> h
+    float i -> i
+    float j -> j
+    float k -> k
+    float l -> l
+    boolean m -> m
+    boolean n -> n
+    int c -> c
+    boolean d -> d
+    void c() -> a
+    void d() -> b
+    void a(float,boolean,float,float) -> a
+    void a(boolean,float,float) -> a
+com.mapabc.mapapi.aR -> com.mapabc.mapapi.dn:
+    com.mapabc.mapapi.L a -> a
+    void run() -> run
+com.mapabc.mapapi.aS -> com.mapabc.mapapi.do:
+    com.mapabc.mapapi.L a -> a
+    void run() -> run
+com.mapabc.mapapi.aT -> com.mapabc.mapapi.dp:
+    java.util.LinkedList a -> a
+    java.util.LinkedList b -> b
+com.mapabc.mapapi.aU -> com.mapabc.mapapi.dq:
+    com.mapabc.mapapi.Route$FromAndTo a -> a
+    int b -> b
+    java.lang.String c -> c
+    double a() -> a
+    double b() -> b
+    double c() -> c
+    double d() -> d
+com.mapabc.mapapi.aV -> com.mapabc.mapapi.dr:
+    com.mapabc.mapapi.X a -> a
+    int d -> d
+    boolean b -> b
+    com.mapabc.mapapi.MapView c -> c
+    void a() -> a
+    void a(com.mapabc.mapapi.m) -> a
+    void run() -> run
+com.mapabc.mapapi.aa -> com.mapabc.mapapi.ds:
+    void a() -> a
+    void b() -> b
+com.mapabc.mapapi.ab -> com.mapabc.mapapi.dt:
+    java.lang.String[] e() -> b
+    int f() -> a
+    java.lang.String g() -> c
+    java.lang.Object a(org.w3c.dom.NodeList) -> a
+com.mapabc.mapapi.ac -> com.mapabc.mapapi.du:
+    java.lang.String[] e() -> b
+    int f() -> a
+    java.lang.String g() -> c
+    java.lang.Object a(org.w3c.dom.NodeList) -> a
+    java.lang.Object c(java.io.InputStream) -> a
+com.mapabc.mapapi.ad -> com.mapabc.mapapi.dv:
+    android.graphics.Bitmap a -> a
+    android.graphics.Canvas b -> b
+    android.graphics.Bitmap$Config c -> c
+    void a(int,int) -> a
+    void a(com.mapabc.mapapi.az) -> a
+    android.graphics.Bitmap a() -> a
+com.mapabc.mapapi.ae -> com.mapabc.mapapi.dw:
+    java.lang.String[] e() -> b
+    int f() -> a
+    java.lang.String g() -> c
+    java.lang.Object a(org.w3c.dom.NodeList) -> a
+com.mapabc.mapapi.af -> com.mapabc.mapapi.dx:
+    java.lang.Thread[] a -> a
+    void a() -> a
+    void b() -> b
+com.mapabc.mapapi.ag -> com.mapabc.mapapi.dy:
+    com.mapabc.mapapi.MapView$g a -> a
+    void onClick(android.view.View) -> onClick
+com.mapabc.mapapi.ah -> com.mapabc.mapapi.dz:
+    com.mapabc.mapapi.aO b -> b
+    float c -> c
+    android.graphics.Point a() -> a
+    boolean a(float) -> a
+    void c() -> c
+com.mapabc.mapapi.ai -> com.mapabc.mapapi.ea:
+    com.mapabc.mapapi.GeoPoint c -> c
+    com.mapabc.mapapi.GeoPoint d -> d
+    int e -> e
+    int f -> f
+    int g -> g
+    int h -> h
+    int i -> i
+    int j -> j
+    int k -> k
+    int l -> l
+    com.mapabc.mapapi.y m -> m
+    void d() -> b
+    void c() -> a
+    int a(int,int,int) -> a
+com.mapabc.mapapi.aj -> com.mapabc.mapapi.eb:
+    com.mapabc.mapapi.RouteOverlay c -> c
+    int d -> d
+    void a() -> a
+    void b() -> b
+    void a(int) -> a
+com.mapabc.mapapi.ak -> com.mapabc.mapapi.ec:
+    java.lang.String a -> a
+    int b -> b
+    java.lang.String toString() -> toString
+    java.util.ArrayList a(java.io.InputStream) -> a
+com.mapabc.mapapi.al -> com.mapabc.mapapi.ed:
+    void a(org.w3c.dom.Node,java.util.ArrayList) -> a
+    void a(java.util.ArrayList) -> a
+    java.util.ArrayList b(java.io.InputStream) -> c
+    java.lang.Object a(org.w3c.dom.NodeList) -> a
+    java.lang.Object c(java.io.InputStream) -> a
+com.mapabc.mapapi.an -> com.mapabc.mapapi.ee:
+    int f() -> a
+    void a(java.util.ArrayList) -> a
+    void a(org.w3c.dom.Node,java.util.ArrayList) -> a
+com.mapabc.mapapi.ao -> com.mapabc.mapapi.ef:
+    java.lang.String[] e() -> b
+    int f() -> a
+    java.lang.String g() -> c
+    java.lang.Object c(java.io.InputStream) -> a
+com.mapabc.mapapi.ap -> com.mapabc.mapapi.eg:
+    double a -> a
+    double b -> b
+    int c -> c
+com.mapabc.mapapi.aq -> com.mapabc.mapapi.eh:
+    java.util.ArrayList a -> b
+    org.w3c.dom.NodeList a(java.io.InputStream) -> d
+    java.lang.Object c(java.io.InputStream) -> a
+    java.lang.Object a(org.w3c.dom.NodeList) -> a
+    java.lang.String c(org.w3c.dom.Node) -> b
+com.mapabc.mapapi.ar -> com.mapabc.mapapi.ei:
+    long a -> a
+    int b -> b
+    int c -> c
+    java.lang.String d -> d
+com.mapabc.mapapi.as -> com.mapabc.mapapi.ej:
+    com.mapabc.mapapi.PoiSearch$Query a -> a
+    com.mapabc.mapapi.PoiSearch$SearchBound b -> b
+com.mapabc.mapapi.at -> com.mapabc.mapapi.ek:
+    java.util.LinkedList a -> a
+    void c(java.lang.Object) -> a
+    java.lang.Object a() -> a
+    void add(int,java.lang.Object) -> add
+    boolean addAll(java.util.Collection) -> addAll
+    boolean addAll(int,java.util.Collection) -> addAll
+    void clear() -> clear
+    boolean contains(java.lang.Object) -> contains
+    boolean containsAll(java.util.Collection) -> containsAll
+    java.lang.Object get(int) -> get
+    int indexOf(java.lang.Object) -> indexOf
+    boolean isEmpty() -> isEmpty
+    java.util.Iterator iterator() -> iterator
+    int lastIndexOf(java.lang.Object) -> lastIndexOf
+    java.util.ListIterator listIterator() -> listIterator
+    java.util.ListIterator listIterator(int) -> listIterator
+    java.lang.Object remove(int) -> remove
+    boolean remove(java.lang.Object) -> remove
+    boolean removeAll(java.util.Collection) -> removeAll
+    boolean retainAll(java.util.Collection) -> retainAll
+    java.lang.Object set(int,java.lang.Object) -> set
+    int size() -> size
+    java.util.List subList(int,int) -> subList
+    java.lang.Object[] toArray() -> toArray
+    java.lang.Object[] toArray(java.lang.Object[]) -> toArray
+    boolean add(java.lang.Object) -> add
+com.mapabc.mapapi.au -> com.mapabc.mapapi.el:
+    java.lang.String a -> a
+    boolean a(com.mapabc.minimap.map.vmap.NativeMapEngine) -> a
+com.mapabc.mapapi.av -> com.mapabc.mapapi.em:
+    java.util.ArrayList b -> b
+    java.util.ArrayList c -> c
+    com.mapabc.mapapi.D f -> f
+    com.mapabc.mapapi.aa g -> g
+    com.mapabc.mapapi.p c() -> c
+    void a(com.mapabc.mapapi.aa) -> a
+    void a(com.mapabc.mapapi.ak) -> a
+    void a() -> a
+    void f() -> f
+    void d() -> d
+    void e() -> e
+    java.lang.Object a(java.lang.String) -> a
+    void a(java.io.InputStream) -> a
+    void a(java.io.OutputStream) -> a
+    void a(java.lang.String,java.lang.Object) -> a
+    void a(java.lang.Object) -> a
+    com.mapabc.mapapi.K a(java.lang.Object,java.net.Proxy,java.lang.String,java.lang.String) -> a
+com.mapabc.mapapi.aw -> com.mapabc.mapapi.en:
+    boolean a -> b
+    java.util.ArrayList a(java.io.InputStream) -> c
+    java.lang.String[] e() -> b
+    int f() -> a
+    java.lang.String g() -> c
+    java.lang.Object j() -> f
+    java.lang.Object c(java.io.InputStream) -> a
+com.mapabc.mapapi.ax -> com.mapabc.mapapi.eo:
+    com.mapabc.mapapi.ax a -> a
+    android.graphics.drawable.Drawable c -> c
+    com.mapabc.mapapi.MapView b -> b
+    android.view.View d -> d
+    com.mapabc.mapapi.GeoPoint e -> e
+    long f -> f
+    com.mapabc.mapapi.MapView$LayoutParams g -> g
+    void a() -> a
+    void b() -> b
+    boolean c() -> c
+    boolean onDown(android.view.MotionEvent) -> onDown
+    boolean onFling(android.view.MotionEvent,android.view.MotionEvent,float,float) -> onFling
+    void onLongPress(android.view.MotionEvent) -> onLongPress
+    boolean onScroll(android.view.MotionEvent,android.view.MotionEvent,float,float) -> onScroll
+    void onShowPress(android.view.MotionEvent) -> onShowPress
+    boolean onSingleTapUp(android.view.MotionEvent) -> onSingleTapUp
+com.mapabc.mapapi.az -> com.mapabc.mapapi.ep:
+    void a(android.graphics.Canvas) -> a
+com.mapabc.mapapi.b -> com.mapabc.mapapi.eq:
+    int a -> b
+    int b -> c
+    java.util.ArrayList c -> d
+    void a$13462e() -> h
+    int a() -> i
+    java.lang.String[] e() -> b
+    org.w3c.dom.NodeList a(java.io.InputStream) -> d
+    int f() -> a
+    void a(java.util.ArrayList) -> a
+    void a(org.w3c.dom.Node,java.util.ArrayList) -> a
+    java.lang.String g() -> c
+com.mapabc.mapapi.b$a -> com.mapabc.mapapi.er:
+    java.lang.String a -> a
+    java.lang.String b -> b
+    java.lang.String c -> c
+    java.lang.String d -> d
+    java.lang.String e -> e
+    java.lang.String f -> f
+    java.lang.String g -> g
+    double h -> h
+    double i -> i
+com.mapabc.mapapi.c -> com.mapabc.mapapi.es:
+    double i -> i
+    double j -> j
+    com.mapabc.mapapi.MapView$EnumMapProjection a -> a
+    double k -> k
+    double l -> l
+    double m -> m
+    int b -> b
+    int c -> c
+    int d -> d
+    double[] e -> e
+    com.mapabc.mapapi.M n -> n
+    double o -> o
+    com.mapabc.mapapi.GeoPoint f -> f
+    android.graphics.Point g -> g
+    com.mapabc.mapapi.c$a h -> h
+    void a(int) -> a
+    void b(int) -> b
+    void c(int) -> c
+    void a() -> a
+    void a(android.graphics.Point) -> a
+    com.mapabc.mapapi.GeoPoint a(com.mapabc.mapapi.GeoPoint) -> a
+    android.graphics.PointF b(com.mapabc.mapapi.GeoPoint,com.mapabc.mapapi.GeoPoint,android.graphics.Point,double) -> b
+    com.mapabc.mapapi.GeoPoint b(com.mapabc.mapapi.GeoPoint) -> b
+    com.mapabc.mapapi.GeoPoint a(android.graphics.PointF,com.mapabc.mapapi.GeoPoint,android.graphics.Point,double,com.mapabc.mapapi.c$a) -> a
+    com.mapabc.mapapi.GeoPoint b(android.graphics.PointF,com.mapabc.mapapi.GeoPoint,android.graphics.Point,double,com.mapabc.mapapi.c$a) -> b
+    android.graphics.PointF a(com.mapabc.mapapi.GeoPoint,com.mapabc.mapapi.GeoPoint,android.graphics.Point,double) -> a
+    java.util.ArrayList a(com.mapabc.mapapi.GeoPoint,int,int) -> a
+    android.graphics.PointF a(int,int,int,int,android.graphics.PointF,int,int) -> a
+    void a(android.graphics.PointF,android.graphics.PointF,int) -> a
+    float a(com.mapabc.mapapi.GeoPoint,com.mapabc.mapapi.GeoPoint) -> a
+com.mapabc.mapapi.c$a -> com.mapabc.mapapi.et:
+    float a -> a
+    float b -> b
+    float c -> c
+    float d -> d
+com.mapabc.mapapi.d -> com.mapabc.mapapi.eu:
+    com.mapabc.mapapi.d$b a -> a
+    com.mapabc.mapapi.d$d b -> b
+    com.mapabc.mapapi.d$a c -> c
+    com.mapabc.mapapi.d$c d -> d
+    com.mapabc.mapapi.d$e e -> e
+    com.mapabc.mapapi.c f -> f
+com.mapabc.mapapi.d$a -> com.mapabc.mapapi.ev:
+    int a -> a
+    android.os.Handler c -> c
+    java.lang.Runnable d -> d
+    com.mapabc.mapapi.d b -> b
+    void a() -> a
+    void b() -> b
+    android.os.Handler a(com.mapabc.mapapi.d$a) -> a
+    java.lang.Runnable b(com.mapabc.mapapi.d$a) -> b
+com.mapabc.mapapi.d$b -> com.mapabc.mapapi.ew:
+    com.mapabc.mapapi.d a -> a
+    android.graphics.Point toPixels$3d6cf219(com.mapabc.mapapi.GeoPoint) -> a
+    com.mapabc.mapapi.GeoPoint fromPixels(int,int) -> a
+    float metersToEquatorPixels(float) -> a
+com.mapabc.mapapi.d$c -> com.mapabc.mapapi.ex:
+    boolean c -> c
+    com.mapabc.mapapi.at d -> d
+    com.mapabc.mapapi.at e -> e
+    com.mapabc.mapapi.at f -> f
+    com.mapabc.mapapi.l g -> g
+    com.mapabc.mapapi.MapView$ReticleDrawMode h -> h
+    long i -> i
+    boolean a -> a
+    boolean b -> b
+    boolean j -> j
+    com.mapabc.mapapi.d k -> k
+    com.mapabc.mapapi.at a() -> a
+    com.mapabc.mapapi.at b() -> b
+    void c() -> c
+    void d() -> d
+    java.util.List e() -> e
+    void g() -> f
+    void a(int,int,int,int) -> a
+    void h() -> g
+    void b(int,int,int,int) -> b
+    boolean a(long) -> a
+    void i() -> h
+    void a(com.mapabc.mapapi.g,boolean) -> a
+    void a(android.graphics.Canvas,android.graphics.Matrix,float,float) -> a
+    void b(android.graphics.Canvas) -> b
+    void c(android.graphics.Canvas) -> c
+    android.graphics.PointF a(com.mapabc.mapapi.n) -> a
+    void a(android.graphics.Canvas,com.mapabc.mapapi.n) -> a
+    void d(android.graphics.Canvas) -> d
+    boolean a$4765ad2() -> i
+    boolean b$4765ad2() -> j
+    boolean a(android.view.MotionEvent) -> a
+    boolean b(android.view.MotionEvent) -> b
+    boolean c(android.view.MotionEvent) -> c
+    void a(android.graphics.Canvas) -> a
+    boolean a(com.mapabc.mapapi.d$c) -> a
+com.mapabc.mapapi.d$d -> com.mapabc.mapapi.ey:
+    com.mapabc.mapapi.MapView b -> b
+    java.util.ArrayList c -> c
+    int d -> d
+    int e -> e
+    com.mapabc.mapapi.d a -> a
+    void a(int) -> a
+    void a(int,int) -> a
+    void a(com.mapabc.mapapi.GeoPoint) -> a
+    int a() -> a
+    int b() -> b
+    int c() -> c
+    com.mapabc.mapapi.GeoPoint d() -> d
+    void a(com.mapabc.mapapi.aA) -> a
+    void e() -> e
+    com.mapabc.mapapi.MapView f() -> f
+    void g() -> g
+    void a(android.view.View,int,int,int,int,int) -> a
+    com.mapabc.mapapi.MapView a(com.mapabc.mapapi.d$d) -> a
+com.mapabc.mapapi.d$e -> com.mapabc.mapapi.ez:
+    java.lang.String a -> a
+    java.lang.String b -> b
+    java.lang.String c -> c
+    com.mapabc.mapapi.MapActivity d -> d
+    java.net.Proxy e -> e
+    com.mapabc.mapapi.U[] f -> f
+    com.mapabc.mapapi.ClsCachFileManager g -> g
+    com.mapabc.mapapi.p a() -> a
+    java.lang.String b() -> b
+    java.lang.String c() -> c
+    java.lang.String d() -> d
+    java.net.Proxy e() -> e
+    com.mapabc.mapapi.ClsCachFileManager f() -> f
+    com.mapabc.mapapi.U a(int) -> a
+    void a(com.mapabc.mapapi.aa) -> a
+    com.mapabc.mapapi.U[] a(com.mapabc.mapapi.d$e) -> a
+    void b(com.mapabc.mapapi.d$e) -> b
+    com.mapabc.mapapi.ClsCachFileManager c(com.mapabc.mapapi.d$e) -> c
+    void d(com.mapabc.mapapi.d$e) -> d
+com.mapabc.mapapi.e -> com.mapabc.mapapi.fa:
+    java.lang.String a -> b
+    java.lang.String b -> c
+    com.mapabc.mapapi.GeoPoint c -> d
+    com.mapabc.mapapi.GeoPoint d -> e
+    java.util.ArrayList b(java.io.InputStream) -> c
+    com.mapabc.mapapi.Route a(org.w3c.dom.Node) -> a
+    com.mapabc.mapapi.GeoPoint[] a(java.lang.String[]) -> a
+    java.lang.Object c(java.io.InputStream) -> a
+com.mapabc.mapapi.f -> com.mapabc.mapapi.fb:
+    void a_() -> f
+com.mapabc.mapapi.g -> com.mapabc.mapapi.fc:
+    boolean draw$5143c3a(android.graphics.Canvas,com.mapabc.mapapi.MapView,boolean) -> b
+com.mapabc.mapapi.h -> com.mapabc.mapapi.fd:
+    android.location.LocationListener f -> f
+    android.location.Criteria g -> g
+    com.mapabc.mapapi.LocationManagerProxy h -> h
+    android.location.Location i -> i
+    boolean j -> j
+    boolean k -> k
+    long l -> l
+    android.location.GpsStatus$Listener m -> m
+    android.location.GpsStatus n -> n
+    com.mapabc.mapapi.h$a o -> o
+    boolean a(android.location.LocationListener) -> a
+    void f() -> f
+    void e() -> e
+    void d() -> d
+    void b_() -> a_
+    android.location.Location g() -> g
+    void i() -> i
+    boolean j() -> j
+    void a(android.location.Location) -> a
+    void onLocationChanged(android.location.Location) -> onLocationChanged
+    void onProviderDisabled(java.lang.String) -> onProviderDisabled
+    void onProviderEnabled(java.lang.String) -> onProviderEnabled
+    void onStatusChanged(java.lang.String,int,android.os.Bundle) -> onStatusChanged
+    void h() -> h
+    int c() -> c
+    void a(java.lang.Object) -> a
+    java.lang.Object a(java.util.ArrayList) -> a
+    java.lang.Object a(java.util.ArrayList,java.net.Proxy) -> a
+    android.location.GpsStatus a(com.mapabc.mapapi.h,android.location.GpsStatus) -> a
+    com.mapabc.mapapi.LocationManagerProxy a(com.mapabc.mapapi.h) -> a
+    boolean b(com.mapabc.mapapi.h) -> b
+    android.location.GpsStatus c(com.mapabc.mapapi.h) -> c
+    boolean a(com.mapabc.mapapi.h,boolean) -> a
+    boolean d(com.mapabc.mapapi.h) -> d
+    long e(com.mapabc.mapapi.h) -> e
+com.mapabc.mapapi.h$1 -> com.mapabc.mapapi.fe:
+    com.mapabc.mapapi.h a -> a
+    void onGpsStatusChanged(int) -> onGpsStatusChanged
+com.mapabc.mapapi.h$a -> com.mapabc.mapapi.ff:
+    com.mapabc.mapapi.h a -> a
+    void onLocationChanged(android.location.Location) -> onLocationChanged
+    void onProviderDisabled(java.lang.String) -> onProviderDisabled
+    void onProviderEnabled(java.lang.String) -> onProviderEnabled
+    void onStatusChanged(java.lang.String,int,android.os.Bundle) -> onStatusChanged
+com.mapabc.mapapi.i -> com.mapabc.mapapi.fg:
+    com.mapabc.mapapi.d$a a -> a
+    void run() -> run
+com.mapabc.mapapi.j -> com.mapabc.mapapi.fh:
+    com.mapabc.mapapi.A d -> d
+    com.mapabc.mapapi.PhoneStateManager$b e -> e
+    java.lang.Object a(java.lang.Object) -> c
+    void b(java.lang.Object) -> b
+com.mapabc.mapapi.k -> com.mapabc.mapapi.fi:
+    void a(java.util.List) -> a
+    void b(java.util.List) -> b
+com.mapabc.mapapi.l -> com.mapabc.mapapi.fj:
+    void a(java.lang.Object) -> b
+    void b(java.lang.Object) -> c
+com.mapabc.mapapi.m -> com.mapabc.mapapi.fk:
+    com.mapabc.mapapi.MapView e -> e
+    java.util.ArrayList a -> a
+    boolean f -> f
+    long b -> b
+    int c -> c
+    byte[] g -> g
+    int h -> h
+    int i -> i
+    boolean j -> j
+    boolean d -> d
+    java.lang.String b() -> b
+    void a() -> a
+    boolean c() -> c
+    void a(com.mapabc.mapapi.m) -> a
+    void d() -> d
+    void a(byte[],int,int) -> a
+com.mapabc.mapapi.n -> com.mapabc.mapapi.fl:
+    com.mapabc.mapapi.n$a a -> a
+    android.graphics.Bitmap b -> b
+    boolean c -> c
+    android.graphics.Paint d -> d
+    android.graphics.Bitmap e -> e
+    int f -> f
+    int a() -> a
+    android.graphics.Paint b() -> b
+    android.graphics.Bitmap c() -> c
+    void a(byte[]) -> a
+    void a(com.mapabc.mapapi.n,com.mapabc.mapapi.n) -> a
+    void b(com.mapabc.mapapi.n,com.mapabc.mapapi.n) -> b
+    boolean d() -> d
+    java.lang.Object clone() -> clone
+com.mapabc.mapapi.n$1 -> com.mapabc.mapapi.fm:
+    void a(android.graphics.Canvas) -> a
+com.mapabc.mapapi.n$a -> com.mapabc.mapapi.fn:
+    int[] e -> e
+    int a -> a
+    int b -> b
+    int c -> c
+    android.graphics.PointF d -> d
+    int f -> f
+    com.mapabc.mapapi.n$a a() -> a
+    boolean equals(java.lang.Object) -> equals
+    int hashCode() -> hashCode
+    java.lang.String toString() -> toString
+    int b() -> b
+    void a(int) -> a
+    java.lang.Object clone() -> clone
+com.mapabc.mapapi.p -> com.mapabc.mapapi.fo:
+    java.lang.String a -> a
+    java.lang.String b -> b
+    java.lang.String c -> c
+    int d -> d
+com.mapabc.mapapi.q -> com.mapabc.mapapi.fp:
+    com.mapabc.mapapi.RouteOverlay a -> c
+    void a(android.graphics.Canvas,com.mapabc.mapapi.MapView,boolean) -> a
+    android.graphics.Point a(com.mapabc.mapapi.MapView,com.mapabc.mapapi.GeoPoint) -> a
+    com.mapabc.mapapi.GeoPoint a(com.mapabc.mapapi.MapView,android.graphics.Point) -> a
+    void a(com.mapabc.mapapi.MapView) -> a
+    void b(com.mapabc.mapapi.MapView) -> b
+    boolean a(android.view.MotionEvent,com.mapabc.mapapi.MapView) -> a
+com.mapabc.mapapi.r -> com.mapabc.mapapi.fq:
+    java.lang.String a -> a
+    java.lang.String b -> b
+    java.lang.Object c -> c
+    java.util.List d -> d
+    java.util.List e -> e
+    void a(java.lang.Object) -> a
+    void a(java.lang.String,java.lang.Object) -> a
+    void a(com.mapabc.mapapi.r) -> a
+    java.lang.String a() -> a
+    java.lang.String a(java.lang.String,java.lang.String,int) -> a
+com.mapabc.mapapi.r$a -> com.mapabc.mapapi.fr:
+    java.lang.String a -> a
+    java.lang.Object b -> b
+    java.lang.String a() -> a
+    java.lang.Object b() -> b
+    void a(java.lang.Object) -> a
+com.mapabc.mapapi.s -> com.mapabc.mapapi.fs:
+    boolean draw$5143c3a(android.graphics.Canvas,com.mapabc.mapapi.MapView,boolean) -> b
+com.mapabc.mapapi.t -> com.mapabc.mapapi.ft:
+    com.mapabc.mapapi.aH a -> a
+    void run() -> run
+com.mapabc.mapapi.u -> com.mapabc.mapapi.fu:
+    com.mapabc.mapapi.MapView$LayoutParams d -> d
+    android.view.View e -> e
+    void a(com.mapabc.mapapi.MapView) -> a
+    void b(com.mapabc.mapapi.MapView) -> b
+com.mapabc.mapapi.v -> com.mapabc.mapapi.fv:
+    java.lang.String a -> a
+    java.lang.String b -> b
+    java.lang.String c -> c
+    java.lang.String d -> d
+    java.lang.String e -> e
+    com.mapabc.mapapi.v f -> f
+    com.mapabc.mapapi.v a() -> a
+    java.lang.String b() -> b
+    java.lang.String c() -> c
+    java.lang.String d() -> d
+    java.lang.String e() -> e
+    java.lang.String f() -> f
+com.mapabc.mapapi.w -> com.mapabc.mapapi.fw:
+    android.graphics.Bitmap[] c -> c
+    android.graphics.Rect d -> d
+    int e -> e
+    com.mapabc.mapapi.d f -> f
+    int a() -> g
+    int b() -> h
+    void a(android.graphics.Canvas,int,int) -> a
+    void c() -> a
+    void d() -> b
+com.mapabc.mapapi.x -> com.mapabc.mapapi.fx:
+    java.lang.String a -> a
+    boolean a(java.lang.String) -> a
+    long a() -> a
+    long b() -> b
+    int a(int) -> a
+    boolean a(long,long,long) -> a
+    org.w3c.dom.Document a(java.io.InputStream) -> a
+    org.w3c.dom.Document b(java.lang.String) -> b
+    android.os.Looper c() -> c
+    java.lang.String a(com.mapabc.mapapi.MapActivity) -> a
+    java.lang.String a(android.content.Context) -> a
+    java.net.Proxy b(android.content.Context) -> b
+    long a(double) -> a
+    double a(long) -> a
+    boolean a(android.graphics.Rect,android.graphics.Point) -> a
+    android.location.Address d() -> d
+    java.lang.String e() -> e
+    java.lang.String f() -> f
+    android.text.Spanned c(java.lang.String) -> c
+    java.lang.String a(java.lang.String,java.lang.String) -> a
+com.mapabc.mapapi.y -> com.mapabc.mapapi.fy:
+    com.mapabc.mapapi.ai a -> a
+    android.os.Message b -> b
+    java.lang.Runnable c -> c
+    com.mapabc.mapapi.MapController d -> d
+    void a(com.mapabc.mapapi.GeoPoint) -> a
+    void a() -> a
+    void a$55759d00(com.mapabc.mapapi.GeoPoint) -> b
+com.mapabc.mapapi.z -> com.mapabc.mapapi.fz:
+    long a -> a
+    int b -> b
+    int c -> c
+    boolean d -> d
+    java.util.Hashtable e -> e
+    java.util.concurrent.locks.Lock f -> f
+    void a(java.lang.Object,java.lang.Object) -> a
+    java.lang.Object a(java.lang.Object) -> a
+    long b(java.lang.Object) -> b
+    void c(java.lang.Object) -> c
+    void a() -> a
+    void b() -> b
+    java.util.Map$Entry[] a(java.util.Hashtable) -> a
+com.mapabc.mapapi.z$1 -> com.mapabc.mapapi.ga:
+    int compare(java.lang.Object,java.lang.Object) -> compare
+com.mapabc.mapapi.z$a -> com.mapabc.mapapi.gb:
+    java.lang.Object a -> a
+    long b -> b
+com.mapabc.minimap.map.vmap.NativeMap -> com.mapabc.minimap.map.vmap.NativeMap:
+    int native_instance -> a
+    byte[] labelbuffer -> b
+    void initMap(byte[],int,int) -> a
+    void finalize() -> finalize
+    void setMapParameter(int,int,int,int) -> a
+    void paintLables$6c8024c(com.mapabc.minimap.map.vmap.NativeMapEngine,android.graphics.Canvas) -> a
+    boolean paintMap(com.mapabc.minimap.map.vmap.NativeMapEngine,int) -> a
+    int nativeCreate() -> nativeCreate
+    void nativeFinalizer(int) -> nativeFinalizer
+    boolean nativePaint(int,int,byte[],int) -> nativePaint
+    void nativeInitMap(int,byte[],int,int) -> nativeInitMap
+    void nativeSetMapParameter(int,int,int,int,int) -> nativeSetMapParameter
+com.mapabc.minimap.map.vmap.NativeMapEngine -> com.mapabc.minimap.map.vmap.NativeMapEngine:
+    android.graphics.Bitmap[] icons -> b
+    int a -> a
+    android.graphics.Bitmap getIconBitmap(int) -> a
+    void initIconData(android.content.Context) -> a
+    void initStyleData(android.content.Context) -> b
+    void finalize() -> finalize
+    void destory() -> a
+    void putGridData(byte[],int,int) -> a
+    boolean hasGridData(java.lang.String) -> a
+    int getBKColor(int) -> b
+    boolean hasBitMapData(java.lang.String) -> b
+    void putBitmapData$29f759e6(java.lang.String,byte[]) -> a
+    void removeBitmapData(java.lang.String,int) -> a
+    void fillBitmapBufferData(java.lang.String,byte[]) -> b
+    int nativeGetBKColor(int,int) -> nativeGetBKColor
+    int nativeCreate(java.lang.String) -> nativeCreate
+    void nativeFinalizer(int) -> nativeFinalizer
+    boolean nativeHasBitMapData(int,java.lang.String) -> nativeHasBitMapData
+    void nativePutBitmapData(int,java.lang.String,byte[],int,int) -> nativePutBitmapData
+    void nativeRemoveBitmapData(int,java.lang.String,int) -> nativeRemoveBitmapData
+    void nativeFillBitmapBufferData(int,java.lang.String,byte[]) -> nativeFillBitmapBufferData
+    void nativeSetBitmapCacheMaxSize(int,int) -> nativeSetBitmapCacheMaxSize
+    void nativeSetVectormapCacheMaxSize(int,int) -> nativeSetVectormapCacheMaxSize
+    void nativePutGridData(int,byte[],int,int) -> nativePutGridData
+    boolean nativeHasGridData(int,java.lang.String) -> nativeHasGridData
+    void nativeSetBackgroundImageData(int,byte[]) -> nativeSetBackgroundImageData
+    void nativeSetStyleData(int,byte[]) -> nativeSetStyleData
+com.mapabc.minimap.map.vmap.VMapProjection -> com.mapabc.minimap.map.vmap.a:
+    double Clip(double,double,double) -> a
+    com.mapabc.mapapi.VMapGeoPoint LatLongToPixels$150e74fc(double,double) -> a
+    com.mapabc.mapapi.VMapGeoPoint PixelsToTile(int,int) -> a
+    java.lang.String TileToQuadKey(int,int,int) -> a
+    com.mapabc.mapapi.VMapGeoPoint QuadKeyToTitle(java.lang.String) -> a
+    android.graphics.Point QuadKeyToTile(java.lang.String) -> b
+com.mapabc.minimap.map.vmap.a -> com.mapabc.minimap.map.vmap.b:
+    java.lang.String a -> a
+    int b -> b
+    int c -> c
+    int d -> d
+    int e -> e
+    int f -> f
+    int g -> g
+    int h -> h
+    int i -> i
+    int j -> j
+    int k -> k
+    int l -> l
+    int m -> m
+    int n -> n

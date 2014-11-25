@@ -1,0 +1,447 @@
+android.annotation.SuppressLint
+android.annotation.TargetApi
+com.mapabc.cn.apis.BuildConfig
+com.mapabc.cn.apis.LoginActivity:
+    public static final int REFRESH_INIT
+com.mapabc.cn.apis.MainMenuView:
+    android.widget.ListView listView
+    android.widget.GridView menuGrid
+    261:267:public void loadurl(android.webkit.WebView,java.lang.String)
+    49:49:static synthetic android.os.Handler access$0(com.mapabc.cn.apis.MainMenuView)
+com.mapabc.cn.apis.MainMenuView$4
+com.mapabc.cn.apis.MainMenuView$JSInterface:
+    213:232:public void click(double,double)
+    205:205:static synthetic com.mapabc.cn.apis.MainMenuView access$0(com.mapabc.cn.apis.MainMenuView$JSInterface)
+com.mapabc.cn.apis.MainMenuView$JSInterface$1
+com.mapabc.cn.apis.MainMenuView$JavaScriptInterface
+com.mapabc.cn.apis.R
+com.mapabc.cn.apis.R$attr
+com.mapabc.cn.apis.R$drawable
+com.mapabc.cn.apis.R$id
+com.mapabc.cn.apis.R$layout
+com.mapabc.cn.apis.R$string
+com.mapabc.cn.apis.R$xml
+com.mapabc.cn.apis.location.LocationManager:
+    private static final long mLocationUpdateMinTime
+    private static final float mLocationUpdateMinDistance
+com.mapabc.cn.apis.poisearch.MySuggestionProvider:
+    public static final java.lang.String AUTHORITY
+    public static final int MODE
+com.mapabc.cn.apis.route.RouteDemo:
+    private com.mapabc.mapapi.GeoPoint point
+    private android.widget.ImageButton routeSearchImagebtn
+com.mapabc.cn.apis.route.RouteSearchAdapter
+com.mapabc.cn.apis.route.RouteSearchPoiDialog
+com.mapabc.cn.apis.route.RouteSearchPoiDialog$1
+com.mapabc.cn.apis.route.RouteSearchPoiDialog$OnListItemClick
+com.mapabc.cn.apis.service.GetMyLocationService:
+    private static final long mLocationUpdateMinTime
+    private static final float mLocationUpdateMinDistance
+    private android.database.sqlite.SQLiteDatabase db
+    63:67:public void disableMyLocation()
+    152:163:private double getDistanceBetween(java.lang.Double,java.lang.Double,java.lang.Double,java.lang.Double)
+com.mapabc.cn.apis.util.Constants
+com.mapabc.cn.apis.util.LocationUtil:
+    public static final int loopSleepTime
+    private static java.util.List locationList
+    18:18:public LocationUtil()
+    32:38:public static android.location.Criteria getCriteria()
+    47:50:public static android.location.Location getLocation()
+    59:73:public static void setLocation(android.location.Location)
+    82:82:public boolean refershLocation()
+    111:132:public static java.lang.String getDistanceBetween(java.lang.Double,java.lang.Double,java.lang.Double,java.lang.Double)
+com.mapabc.cn.apis.util.MapUtil:
+    5:5:public MapUtil()
+com.mapabc.mapapi.BusSegment:
+    16:16:public java.lang.String getLineName()
+    20:20:public java.lang.String getFirstStationName()
+    24:24:public java.lang.String getLastStationName()
+com.mapabc.mapapi.CDPoint
+com.mapabc.mapapi.ConfigableConst:
+    268:268:ConfigableConst()
+com.mapabc.mapapi.Convert:
+    5:5:public Convert()
+    22:25:public static int getUShort(byte[],int)
+    30:37:public static boolean getBit(byte,int)
+    42:44:public static byte[] copyString(byte[],int,int)
+    48:53:public static byte[] convertInt(int)
+    56:61:public static int getNum(byte,int,int)
+    65:69:public static int getNum(short,int,int)
+    72:75:public static byte[] convertShort(int)
+    87:90:public static java.lang.String getString(byte[],int,int)
+    95:97:public static byte[] getSubBytes(byte[],int,int)
+    102:113:public static byte[] get1BString(java.lang.String)
+    120:129:public static byte[] get2BString(java.lang.String)
+    135:141:public static double convertDouble(byte[],int)
+    146:156:public static byte[] getDouble(double)
+    162:168:public static void convert1bString(byte[],int,com.mapabc.mapapi.O)
+    174:180:public static void convert2bString(byte[],int,com.mapabc.mapapi.O)
+com.mapabc.mapapi.DPoint
+com.mapabc.mapapi.DriveWalkSegment:
+    11:11:public java.lang.String getActionDescription()
+    15:15:public int getActionCode()
+    19:19:public java.lang.String getRoadName()
+com.mapabc.mapapi.GeoPoint:
+    static final int MaxDyeZoom
+    static final int EquatorLong
+    266:266:java.lang.String getLonLatAddr()
+com.mapabc.mapapi.Geocoder:
+    public static final java.lang.String Street_Road
+    public static final java.lang.String POI
+    public static final java.lang.String Cross
+    21:23:public Geocoder(com.mapabc.mapapi.MapActivity)
+    44:59:public final java.util.List getFromRawGpsLocation(double,double,int)
+    86:120:public final java.util.List getFromLocationName(java.lang.String,int,double,double,double,double)
+    128:145:private static java.util.List a(java.util.List,double,double,double,double,int)
+    150:150:public final java.util.List getFromLocationName(java.lang.String,int)
+com.mapabc.mapapi.GlobalStore:
+    static final int MaxLog
+    73:76:public synchronized void addCenterIfEmpty(com.mapabc.mapapi.GeoPoint,int)
+    105:105:public boolean getLogEnable()
+    121:136:public void addInfo(int,long,long,java.lang.String)
+    241:241:public int getCurTowerIndex()
+    257:257:public java.lang.String getDevice()
+com.mapabc.mapapi.H:
+    112:112:public final int getAccuracy()
+    117:117:public final java.lang.String getName()
+    122:122:public final int getPowerRequirement()
+    126:126:public final boolean hasMonetaryCost()
+    130:130:public final boolean requiresCell()
+    134:134:public final boolean requiresNetwork()
+    138:138:public final boolean requiresSatellite()
+    142:142:public final boolean supportsAltitude()
+    146:146:public final boolean supportsBearing()
+    150:150:public final boolean supportsSpeed()
+com.mapabc.mapapi.ITileProtocalConfig
+com.mapabc.mapapi.ItemizedOverlay:
+    140:141:public com.mapabc.mapapi.GeoPoint getCenter()
+    161:161:public int getLatSpanE6()
+    165:165:public int getLonSpanE6()
+    169:170:public void setOnFocusChangeListener(com.mapabc.mapapi.ItemizedOverlay$OnFocusChangeListener)
+    173:174:public void setDrawFocusedItem(boolean)
+    177:177:public final int getLastFocusedIndex()
+    222:234:public com.mapabc.mapapi.OverlayItem nextFocus(boolean)
+    290:304:public boolean onSnapToItem(int,int,android.graphics.Point,com.mapabc.mapapi.MapView)
+com.mapabc.mapapi.ItemizedOverlay$a:
+    457:472:public final int a(boolean)
+com.mapabc.mapapi.LocationManagerProxy:
+    public static final java.lang.String GPS_PROVIDER
+    public static final java.lang.String KEY_LOCATION_CHANGED
+    public static final java.lang.String KEY_PROVIDER_ENABLED
+    public static final java.lang.String KEY_PROXIMITY_ENTERING
+    public static final java.lang.String KEY_STATUS_CHANGED
+    public static final java.lang.String NETWORK_PROVIDER
+    public static final java.lang.String PASSIVE_PROVIDER
+    39:41:public LocationManagerProxy(com.mapabc.mapapi.MapActivity)
+    66:68:public void addProximityAlert(double,double,float,long,android.app.PendingIntent)
+    71:72:public void removeProximityAlert(android.app.PendingIntent)
+    89:93:public java.util.List getProviders(android.location.Criteria,boolean)
+    116:123:public void requestLocationUpdates(java.lang.String,long,float,android.app.PendingIntent)
+    138:146:public void requestLocationUpdates(java.lang.String,long,float,android.location.LocationListener,android.os.Looper)
+    154:154:public android.location.Location getLastKnownLocation(java.lang.String)
+    161:161:public boolean sendExtraCommand(java.lang.String,java.lang.String,android.os.Bundle)
+    183:185:public java.util.List getAllProviders()
+    202:205:public void addTestProvider(java.lang.String,boolean,boolean,boolean,boolean,boolean,boolean,boolean,int,int)
+    208:209:public void clearTestProviderEnabled(java.lang.String)
+    212:213:public void clearTestProviderLocation(java.lang.String)
+    216:217:public void clearTestProviderStatus(java.lang.String)
+    238:240:public void removeUpdates(android.app.PendingIntent)
+com.mapabc.mapapi.LocationProviderProxy:
+    public static final int AVAILABLE
+    public static final int OUT_OF_SERVICE
+    public static final int TEMPORARILY_UNAVAILABLE
+    public static final java.lang.String MapABCNetwork
+    49:49:public int getAccuracy()
+    54:54:public java.lang.String getName()
+    59:59:public int getPowerRequirement()
+    64:64:public boolean hasMonetaryCost()
+    74:74:public boolean requiresCell()
+    79:79:public boolean requiresNetwork()
+    84:84:public boolean requiresSatellite()
+    89:89:public boolean supportsAltitude()
+    94:94:public boolean supportsBearing()
+    99:99:public boolean supportsSpeed()
+com.mapabc.mapapi.M:
+    10:31:M()
+com.mapabc.mapapi.MapActivity:
+    158:158:protected boolean isLocationDisplayed()
+    170:170:protected boolean isRouteDisplayed()
+com.mapabc.mapapi.MapController:
+    115:170:public final void zoomToSpan(int,int)
+    188:197:private static int a(float)
+    221:221:public final boolean zoomOutFixing(int,int)
+    232:233:public final void animateTo(com.mapabc.mapapi.GeoPoint,android.os.Message)
+    236:237:public final void animateTo(com.mapabc.mapapi.GeoPoint,java.lang.Runnable)
+    240:242:public final void stopAnimation(boolean)
+    275:276:public final void stopPanning()
+com.mapabc.mapapi.MapController$a:
+    426:427:public final void a()
+com.mapabc.mapapi.MapView:
+    java.nio.ByteBuffer VpixelsBuffer
+    android.graphics.Canvas VmapCanvas
+    int VcenterX
+    int VcenterY
+    int VmapLevel
+    int VmapAngle
+    192:193:void setMapProjectSetting(com.mapabc.mapapi.M)
+    201:202:public void setMapMoveEnable(boolean)
+    210:237:void setServerUrl(com.mapabc.mapapi.ay)
+    259:260:public void setReticleDrawMode(com.mapabc.mapapi.MapView$ReticleDrawMode)
+    263:263:public com.mapabc.mapapi.GeoPoint getMapCenter()
+    277:277:public int getLatitudeSpan()
+    283:283:public int getLongitudeSpan()
+    308:308:public java.lang.String getDebugVersion()
+    317:317:public java.lang.String getReleaseVersion()
+    330:330:public boolean canCoverCenter()
+    338:339:public void displayZoomControls(boolean)
+    363:363:public void preLoad()
+    366:366:public void setSatellite(boolean)
+    369:369:public boolean isSatellite()
+    382:387:public boolean isTraffic()
+    391:391:public void setStreetView(boolean)
+    394:394:public boolean isStreetView()
+    622:625:public int getScale(int)
+    2169:2172:protected void getScreenPnt(int,int,android.graphics.Point)
+    2188:2196:protected void getScreenPntBy20Pixel(int,int,android.graphics.Point)
+    2356:2359:protected void setMapCenterScreen(int,int)
+    2362:2366:protected void setMapCenter(int,int)
+    2417:2427:int getZoomLevel(int)
+com.mapabc.mapapi.MapView$LayoutParams:
+    public static final int MODE_MAP
+    public static final int MODE_VIEW
+    public static final int LEFT
+    public static final int RIGHT
+    public static final int TOP
+    public static final int BOTTOM
+    public static final int CENTER_HORIZONTAL
+    public static final int CENTER_VERTICAL
+    public static final int CENTER
+    public static final int TOP_LEFT
+    public static final int BOTTOM_CENTER
+    1753:1754:public MapView$LayoutParams(int,int,com.mapabc.mapapi.GeoPoint,int)
+com.mapabc.mapapi.MapView$a:
+    1153:1153:public final boolean b()
+    1157:1159:public final void c(boolean)
+    1264:1264:public final com.mapabc.mapapi.MapView$c e()
+    1268:1268:public final com.mapabc.mapapi.MapView$c f()
+com.mapabc.mapapi.MultiTouchGestureDetector:
+    74:74:public boolean isMultiTouch()
+com.mapabc.mapapi.MyLocationOverlay:
+    194:205:public boolean onSnapToItem(int,int,android.graphics.Point,com.mapabc.mapapi.MapView)
+    399:403:public boolean enableCompass()
+    413:413:public boolean isMyLocationEnabled()
+    417:417:public boolean isCompassEnabled()
+    421:421:public float getOrientation()
+com.mapabc.mapapi.N
+com.mapabc.mapapi.O
+com.mapabc.mapapi.Overlay:
+    protected static final float SHADOW_X_SKEW
+    protected static final float SHADOW_Y_SCALE
+com.mapabc.mapapi.Overlay$Snappable
+com.mapabc.mapapi.OverlayItem:
+    public static final int ITEM_STATE_FOCUSED_MASK
+    public static final int ITEM_STATE_SELECTED_MASK
+    public static final int ITEM_STATE_PRESSED_MASK
+    25:29:public void setMarker(android.graphics.drawable.Drawable)
+    57:61:public static void setState(android.graphics.drawable.Drawable,int)
+    102:102:public java.lang.String routableAddress()
+com.mapabc.mapapi.PhoneStateManager:
+    65:65:public int GetPhoneState()
+    101:105:public android.location.Location getLastKnownLocation()
+com.mapabc.mapapi.PoiItem:
+    45:45:public java.lang.String getAdCode()
+    55:55:public java.lang.String getPoiId()
+com.mapabc.mapapi.PoiOverlay:
+    121:125:public void enablePopup(boolean)
+    166:166:protected com.mapabc.mapapi.MapView$LayoutParams getLayoutParam()
+com.mapabc.mapapi.PoiPagedResult:
+    59:59:public final int getPageCount()
+    64:64:public final com.mapabc.mapapi.PoiSearch$Query getQuery()
+    69:69:public final com.mapabc.mapapi.PoiSearch$SearchBound getBound()
+    107:107:public final java.util.List getSearchSuggestions()
+com.mapabc.mapapi.PoiSearch:
+    34:35:public void setBound(com.mapabc.mapapi.PoiSearch$SearchBound)
+    38:38:public com.mapabc.mapapi.PoiSearch$Query getQuery()
+    42:42:public com.mapabc.mapapi.PoiSearch$SearchBound getBound()
+com.mapabc.mapapi.PoiSearch$Query:
+    47:48:public PoiSearch$Query(java.lang.String,java.lang.String)
+com.mapabc.mapapi.PoiSearch$SearchBound:
+    public static final java.lang.String BOUND_SHAPE
+    public static final java.lang.String POLYGON_SHAPE
+    public static final java.lang.String RECTANGLE_SHAPE
+    public static final java.lang.String ELLIPSE_SHAPE
+    90:96:public PoiSearch$SearchBound(com.mapabc.mapapi.GeoPoint,int)
+    98:101:public PoiSearch$SearchBound(com.mapabc.mapapi.GeoPoint,com.mapabc.mapapi.GeoPoint)
+    103:115:public PoiSearch$SearchBound(com.mapabc.mapapi.MapView)
+    118:136:private void a(com.mapabc.mapapi.GeoPoint,com.mapabc.mapapi.GeoPoint)
+    178:178:public int getLonSpanInMeter()
+    183:183:public int getLatSpanInMeter()
+com.mapabc.mapapi.PoiTypeDef
+com.mapabc.mapapi.ResUtil:
+    8:8:public ResUtil()
+    13:20:public static android.graphics.Bitmap decodeBitmapRealSize(android.content.Context,int)
+    29:41:public static android.graphics.Bitmap decodeAssetBitmap(android.content.Context,java.lang.String)
+com.mapabc.mapapi.Route:
+    public static final int BusDefault
+    public static final int BusSaveMoney
+    public static final int BusLeaseChange
+    public static final int BusLeaseWalk
+    public static final int BusMostComfortable
+    public static final int DrivingDefault
+    public static final int DrivingSaveMoney
+    public static final int DrivingLeastDistance
+    public static final int DrivingNoFastRoad
+    52:56:public int getLength()
+    60:93:private void a()
+    96:99:public com.mapabc.mapapi.GeoPoint getLowerLeftPoint()
+    103:106:public com.mapabc.mapapi.GeoPoint getUpperRightPoint()
+    162:162:public java.lang.String getStartPlace()
+    166:166:public java.lang.String getTargetPlace()
+    186:186:public int getSegmentIndex(com.mapabc.mapapi.Segment)
+    190:190:public java.lang.String getStepedDescription(int)
+    194:194:public java.lang.String getOverview()
+com.mapabc.mapapi.Route$FromAndTo:
+    public static final int NoTrans
+    public static final int TransFromPoint
+    public static final int TransToPoint
+    public static final int TransBothPoint
+com.mapabc.mapapi.Route$c:
+    696:721:public final java.lang.String a()
+    727:742:public final java.lang.String c(int)
+com.mapabc.mapapi.Route$d:
+    263:263:public java.lang.String c(int)
+    public abstract java.lang.String a()
+com.mapabc.mapapi.Route$e:
+    450:476:public final java.lang.String a()
+    482:490:public final java.lang.String c(int)
+com.mapabc.mapapi.RouteOverlay:
+    public static final int OnOverview
+    public static final int OnDetail
+    public static final int OnPrev
+    public static final int OnNext
+    public static final int OnIconClick
+    75:79:public void enablePopup(boolean)
+    82:83:public void enableDrag(boolean)
+    166:167:public void unregisterRouteMessage(com.mapabc.mapapi.RouteMessageHandler)
+    337:346:public void renewOverlay(com.mapabc.mapapi.MapView)
+com.mapabc.mapapi.Segment:
+    24:24:public java.lang.String getConsumeTime()
+    29:61:private void a()
+    65:69:public com.mapabc.mapapi.GeoPoint getLowerLeftPoint()
+    74:78:public com.mapabc.mapapi.GeoPoint getUpperRightPoint()
+    83:83:public int getLength()
+    88:94:private int b()
+    99:100:public com.mapabc.mapapi.Segment getPrev()
+    105:106:public com.mapabc.mapapi.Segment getNext()
+com.mapabc.mapapi.ZoomButtonsController:
+    20:20:public android.view.ViewGroup getContainer()
+    29:29:public android.view.View getZoomControls()
+    40:40:public void setZoomSpeed(long)
+    52:52:public void setFocusable(boolean)
+    60:60:public boolean isAutoDismissed()
+    69:69:public void setAutoDismissed(boolean)
+    78:79:public void setZoomInEnabled(boolean)
+    87:87:public boolean isVisible()
+    97:98:public void setVisible(boolean)
+    107:108:public void setOnZoomListener(com.mapabc.mapapi.ZoomButtonsController$OnZoomListener)
+    121:122:public void setZoomOutEnabled(boolean)
+com.mapabc.mapapi.a:
+    295:299:public final android.location.Location b()
+    385:390:public final void a(android.app.PendingIntent)
+    406:407:public final void b(android.app.PendingIntent)
+com.mapabc.mapapi.a$f:
+    460:462:public a$f(android.app.PendingIntent)
+com.mapabc.mapapi.aG:
+    584:584:public final boolean f()
+com.mapabc.mapapi.aJ:
+    1391:1393:public final boolean a(android.hardware.SensorListener)
+com.mapabc.mapapi.aP:
+    339:339:aP()
+com.mapabc.mapapi.ar:
+    private static final long serialVersionUID
+com.mapabc.mapapi.ay
+com.mapabc.mapapi.b:
+    1608:1608:public final com.mapabc.mapapi.PoiSearch$Query b()
+    1612:1612:public final com.mapabc.mapapi.PoiSearch$SearchBound c()
+    1616:1616:public final java.util.List d()
+com.mapabc.mapapi.c:
+    78:80:final void a(com.mapabc.mapapi.M)
+    357:371:final com.mapabc.mapapi.n$a b()
+com.mapabc.mapapi.d$b:
+    613:613:final int a()
+    629:629:final int b()
+    647:653:private int a(boolean)
+com.mapabc.mapapi.d$c:
+    726:727:public final void a(com.mapabc.mapapi.MapView$ReticleDrawMode)
+    803:818:public final boolean f()
+com.mapabc.mapapi.o
+com.mapabc.mapapi.v:
+    45:46:public final void a(java.lang.String)
+    49:50:public final void b(java.lang.String)
+    53:54:public final void c(java.lang.String)
+    57:58:public final void d(java.lang.String)
+    61:62:public final void e(java.lang.String)
+com.mapabc.mapapi.x:
+    52:52:x()
+    78:78:public static int b(int)
+com.mapabc.minimap.map.vmap.GridItem
+com.mapabc.minimap.map.vmap.NativeMap:
+    23:26:public NativeMap(android.content.Context)
+    47:48:public void resetLabelManager()
+    52:52:public void setDrawMode(int)
+    65:66:public void px20ToScreen(int,int,com.mapabc.mapapi.VMapGeoPoint)
+    69:70:public void pxToScreen(int,int,com.mapabc.mapapi.VMapGeoPoint)
+    73:74:public void ScreenToPx20(int,int,com.mapabc.mapapi.VMapGeoPoint)
+    78:79:public void ScreenToPx(int,int,com.mapabc.mapapi.VMapGeoPoint)
+    82:82:public int getMapWidth()
+    86:86:public int getMapHeight()
+    90:90:public int getMapAngle()
+    94:94:public int getMapCenterX()
+    98:98:public int getMapCenterY()
+    102:102:public int getMapLevel()
+    106:107:public void setMapLevel(int)
+    111:112:public void getLabelStruct(byte[])
+    340:350:public java.lang.String[] getScreenGridNames()
+    private static native void nativeResetLabelManager(int)
+    private static native void nativeSetDrawMode(int,int)
+    private static native void nativePx20ToScreen(int,int,int,com.mapabc.mapapi.VMapGeoPoint)
+    private static native void nativePxToScreen(int,int,int,com.mapabc.mapapi.VMapGeoPoint)
+    private static native void nativeScreenToPx20(int,int,int,com.mapabc.mapapi.VMapGeoPoint)
+    private static native void nativeScreenToPx(int,int,int,com.mapabc.mapapi.VMapGeoPoint)
+    private static native void nativeGetScreenGridNames(int,byte[])
+    private static native void nativeGetLabelStruct(int,byte[])
+    private static native int nativeGetMapWidth(int)
+    private static native int nativeGetMapHeight(int)
+    private static native int nativeGetMapAngle(int)
+    private static native int nativeGetMapCenterX(int)
+    private static native int nativeGetMapCenterY(int)
+    private static native int nativeGetMapLevel(int)
+    private static native void nativeSetMapLevel(int,int)
+com.mapabc.minimap.map.vmap.NativeMapEngine:
+    public static final int ICON_WIDTH
+    public static final int ICON_HEIGHT
+    public static final int MAX_ICON_SIZE
+    public static final int MAX_LABELAINE
+    60:74:private byte[] readRawData(android.content.Context,int)
+    148:149:public void clearBackground()
+    159:159:public byte[] getGridData(java.lang.String)
+    165:166:public void setIconData(int,byte[])
+    198:198:public int getBitmapCacheSize()
+    private static native int nativeGetBitmapCacheSize(int)
+    private static native void nativeClearBackground(int)
+    private static native byte[] nativeGetGridData(int,java.lang.String)
+    private static native void nativeSetIconData(int,int,byte[])
+com.mapabc.minimap.map.vmap.VMapProjection:
+    public static final int MAXZOOMLEVEL
+    public static final int PixelsPerTile
+    public static final double MinLatitude
+    public static final double MaxLatitude
+    public static final double MinLongitude
+    public static final double MaxLongitude
+    public static final int EarthRadiusInMeters
+    public static final int TileSplitLevel
+    public static final double EarthCircumferenceInMeters
+    23:24:public VMapProjection()
+    32:32:public static com.mapabc.mapapi.VMapGeoPoint LatLongToPixels(int,int,int)
+    59:71:public static com.mapabc.mapapi.VMapGeoPoint PixelsToPixels(long,long,int,int)
+    77:87:public static com.mapabc.mapapi.DPoint PixelsToLatLong(long,long,int)
