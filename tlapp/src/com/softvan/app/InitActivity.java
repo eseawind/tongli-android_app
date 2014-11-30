@@ -45,7 +45,7 @@ public class InitActivity extends Activity {
 			// 当动画结�?
 			public void onAnimationEnd(Animation animation) {
 				Intent intent = new Intent(InitActivity.this,
-						MainMenuView.class);
+						MainActivity.class);
 				startActivity(intent); 
 				// 设置动画
 				overridePendingTransition(android.R.anim.fade_in,

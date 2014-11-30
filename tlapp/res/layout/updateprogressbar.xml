@@ -9,16 +9,14 @@
         android:id="@+id/updatepbar"
         style="?android:attr/progressBarStyleSmall"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-       />
+        android:layout_height="wrap_content" />
 
     <TextView
         android:id="@+id/pbtext"
-        android:textSize="12sp"
-        android:layout_marginLeft="5dip"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
         android:text="@string/downnews"
-         />
+        android:textSize="12sp" />
 
 </LinearLayout>
