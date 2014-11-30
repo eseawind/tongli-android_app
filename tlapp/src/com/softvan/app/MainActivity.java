@@ -134,21 +134,21 @@ public class MainActivity extends Activity {
 					 */
 					break;
 				case TOOLBAR_ITEM_BACK:
-					wv.loadUrl("http://192.168.8.101/w/index.ac");
-					// wv.goBack();
+//					wv.loadUrl("http://192.168.8.101/w/index.ac");
+					 wv.goBack();
 					break;
 				case TOOLBAR_ITEM_FORWARD:
-					// wv.goForward();
-					wv.loadUrl("http://192.168.8.102/w/index.ac");
+					 wv.goForward();
+//					wv.loadUrl("http://192.168.8.102/w/index.ac");
 					break;
 				case TOOLBAR_ITEM_REFRESH:
-					// wv.reload();
-					wv.loadUrl("http://192.168.8.103/w/index.ac");
+					 wv.reload();
+//					wv.loadUrl("http://192.168.8.103/w/index.ac");
 					break;
 				case TOOLBAR_ITEM_EXIT:
 					// dialog();
-					// wv.loadUrl("javascript:$('.deploy-sidebar').click();");
-					wv.loadUrl("http://192.168.8.104/w/index.ac");
+					 wv.loadUrl("javascript:$('.deploy-sidebar').click();");
+//					wv.loadUrl("http://192.168.8.104/w/index.ac");
 					break;
 				}
 			}
@@ -279,7 +279,7 @@ public class MainActivity extends Activity {
 				}
 			}
 		} catch (Exception e) {
-			Log.v("error", e.toString());e.printStackTrace();
+			Log.v("error", e.toString());//e.printStackTrace();
 		}
 		return false;
 	}
@@ -464,7 +464,7 @@ public class MainActivity extends Activity {
 			alertDialog.setCanceledOnTouchOutside(false);
 			alertDialog.show();
 		} catch (Exception e) {
-			Log.v("error", e.toString());e.printStackTrace();
+			Log.v("error", e.toString());//e.printStackTrace();
 		}
 	}
 
@@ -496,7 +496,7 @@ public class MainActivity extends Activity {
 			startActivityForResult(intent, REQ_CAMERA);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
-			Log.v("error", e.toString());e.printStackTrace();
+			Log.v("error", e.toString());//e.printStackTrace();
 		}
 	}
 
@@ -511,7 +511,7 @@ public class MainActivity extends Activity {
 			FileUtils.compressFile(f.getPath(), compressPath);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
-			Log.v("error", e.toString());e.printStackTrace();
+			Log.v("error", e.toString());//e.printStackTrace();
 		}
 	}
 
@@ -528,7 +528,7 @@ public class MainActivity extends Activity {
 					MediaStore.Images.Media.EXTERNAL_CONTENT_URI, values);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
-			Log.v("error", e.toString());e.printStackTrace();
+			Log.v("error", e.toString());//e.printStackTrace();
 		}
 	}
 
@@ -545,7 +545,7 @@ public class MainActivity extends Activity {
 			startActivityForResult(wrapperIntent, REQ_CHOOSE);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
-			Log.v("error", e.toString());e.printStackTrace();
+			Log.v("error", e.toString());//e.printStackTrace();
 		}
 	}
 
@@ -587,7 +587,7 @@ public class MainActivity extends Activity {
 			}
 		} catch (IllegalArgumentException e) {
 			// TODO Auto-generated catch block
-			Log.v("error", e.toString());e.printStackTrace();
+			Log.v("error", e.toString());//e.printStackTrace();
 		}
 		return null;
 	}
@@ -614,7 +614,7 @@ public class MainActivity extends Activity {
 			super.onActivityResult(requestCode, resultCode, intent);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
-			Log.v("error", e.toString());e.printStackTrace();
+			Log.v("error", e.toString());//e.printStackTrace();
 		}
 	}
 

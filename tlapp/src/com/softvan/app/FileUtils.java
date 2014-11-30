@@ -50,7 +50,7 @@ public class FileUtils {
 			try {
 				file = FileUtils.getFileFromBytes(bytes, newPath);
 			} catch (Exception e) {
-				Log.v("error", e.toString());e.printStackTrace();
+				Log.v("error", e.toString());//e.printStackTrace();
 			}finally{
 				if(newBitmap != null ){
 					if(!newBitmap.isRecycled()){
@@ -67,7 +67,7 @@ public class FileUtils {
 			}
 		} catch (Exception e) {
 			
-			Log.v("error", e.toString());e.printStackTrace();
+			Log.v("error", e.toString());//e.printStackTrace();
 		}
 		return file;
 	}
@@ -78,7 +78,7 @@ public class FileUtils {
 			return rotaingImageView(degree, bitmap);
 		} catch (Exception e) {
 			
-			Log.v("error", e.toString());e.printStackTrace();
+			Log.v("error", e.toString());//e.printStackTrace();
 		}
 		return null;
 	}
@@ -104,7 +104,7 @@ public class FileUtils {
 					bitmap.getWidth(), bitmap.getHeight(), matrix, true);
 		} catch (Exception e) {
 			
-			Log.v("error", e.toString());e.printStackTrace();
+			Log.v("error", e.toString());//e.printStackTrace();
 		}
 		return resizedBitmap;
 	}
@@ -131,7 +131,7 @@ public class FileUtils {
                         break;
                 }
         } catch (IOException e) {
-                Log.v("error", e.toString());e.printStackTrace();
+                Log.v("error", e.toString());//e.printStackTrace();
         }
         return degree;
     }
@@ -153,14 +153,14 @@ public class FileUtils {
 			stream.write(b);
 		} catch (Exception e) {
 			// log.error("helper:get file from byte process error!");
-			Log.v("error", e.toString());e.printStackTrace();
+			Log.v("error", e.toString());//e.printStackTrace();
 		} finally {
 			if (stream != null) {
 				try {
 					stream.close();
 				} catch (IOException e) {
 					// log.error("helper:get file from byte process error!");
-					Log.v("error", e.toString());e.printStackTrace();
+					Log.v("error", e.toString());//e.printStackTrace();
 				}
 			}
 		}
@@ -200,7 +200,7 @@ public class FileUtils {
 			}
 			bm = b.copy(Config.ARGB_8888, false);
 		} catch (Exception e) {
-			Log.v("error", e.toString());e.printStackTrace();
+			Log.v("error", e.toString());//e.printStackTrace();
 		}
 		return bm;
 	}
