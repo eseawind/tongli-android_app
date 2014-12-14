@@ -3,7 +3,7 @@
     android:id="@+id/RelativeLayout_Item"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
-    android:paddingBottom="5dip" >
+    android:paddingBottom="8dip" >
 
     <ImageView
         android:id="@+id/item_image"
@@ -12,7 +12,7 @@
         android:layout_centerHorizontal="true" >
     </ImageView>
 
-    <TextView
+   <!--  <TextView
         android:id="@+id/item_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -20,5 +20,5 @@
         android:layout_centerHorizontal="true"
         android:text="选项" >
     </TextView>
-
+ -->
 </RelativeLayout>

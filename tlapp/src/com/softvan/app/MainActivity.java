@@ -47,7 +47,7 @@ public class MainActivity extends Activity {
 	GridView menuGrid, toolbarGrid;
 	final Context myApp = this;
 	// private Handler mHandler = new Handler();
-	private String HOMEPAGE = "http://114.215.184.44/w/index.ac";
+	private String HOMEPAGE = "http://www.tlkidsclub.com/w/index.ac";
 
 	/** 浏览器 **/
 	public static WebView wv;
@@ -182,12 +182,15 @@ public class MainActivity extends Activity {
 		for (int i = 0; i < menuNameArray.length; i++) {
 			HashMap<String, Object> map = new HashMap<String, Object>();
 			map.put("itemImage", imageResourceArray[i]);
-			map.put("itemText", menuNameArray[i]);
+//			map.put("itemText", menuNameArray[i]);
 			data.add(map);
 		}
+//		SimpleAdapter simperAdapter = new SimpleAdapter(this, data,
+//				R.layout.item_menu, new String[] { "itemImage", "itemText" },
+//				new int[] { R.id.item_image, R.id.item_text });
 		SimpleAdapter simperAdapter = new SimpleAdapter(this, data,
-				R.layout.item_menu, new String[] { "itemImage", "itemText" },
-				new int[] { R.id.item_image, R.id.item_text });
+				R.layout.item_menu, new String[] { "itemImage"},
+				new int[] { R.id.item_image});
 		return simperAdapter;
 	}
 
