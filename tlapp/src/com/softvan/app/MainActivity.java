@@ -6,6 +6,7 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.AlertDialog.Builder;
@@ -21,6 +22,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
 import android.provider.MediaStore;
+import android.provider.MediaStore.MediaColumns;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.KeyEvent;
@@ -40,6 +42,7 @@ import android.widget.ProgressBar;
 import android.widget.SimpleAdapter;
 import android.widget.Toast;
 
+@SuppressLint("SetJavaScriptEnabled")
 public class MainActivity extends Activity {
 	/**
 	 * 底部菜单栏
@@ -54,7 +57,7 @@ public class MainActivity extends Activity {
 	/** 进度条 */
 	private ProgressBar progressBar;
 	/** Toolbar底部菜单选项下标 **/
-	private final int TOOLBAR_ITEM_PAGEHOME = 0;// 首页
+	private final int TOOLBAR_ITEM_HOME = 0;// 首页
 	private final int TOOLBAR_ITEM_BACK = 1;// 退后
 	private final int TOOLBAR_ITEM_FORWARD = 2;// 前进
 	private final int TOOLBAR_ITEM_REFRESH = 3;// 刷新
@@ -65,10 +68,8 @@ public class MainActivity extends Activity {
 	private static final int REQ_CHOOSE = REQ_CAMERA + 1;
 
 	/** 底部菜单图片 **/
-	int[] menu_toolbar_image_array = { R.drawable.controlbar_homepage,
-			R.drawable.controlbar_backward_enable,
-			R.drawable.controlbar_forward_enable, R.drawable.menu_refresh,
-			R.drawable.controlbar_menu };
+	int[] menu_toolbar_image_array = { R.drawable.home, R.drawable.back,
+			R.drawable.forward, R.drawable.refresh, R.drawable.menu };
 	/** 底部菜单文字 **/
 	String[] menu_toolbar_name_array = { "首页", "后退", "前进",
 			// "停止",
@@ -85,6 +86,7 @@ public class MainActivity extends Activity {
 		wv = (WebView) findViewById(R.id.webView1);
 
 		wv.setWebViewClient(new WebViewClient() {
+			@Override
 			public boolean shouldOverrideUrlLoading(final WebView view,
 					final String url) {
 				view.loadUrl(url);
@@ -109,7 +111,7 @@ public class MainActivity extends Activity {
 
 		// 创建底部菜单 Toolbar
 		toolbarGrid = (GridView) findViewById(R.id.GridView_toolbar);
-		toolbarGrid.setBackgroundResource(R.drawable.channelgallery_bg);// 设置背景
+		toolbarGrid.setBackgroundResource(R.drawable.bg);// 设置背景
 		toolbarGrid.setNumColumns(5);// 设置每行列数
 		toolbarGrid.setGravity(Gravity.CENTER);// 位置居中
 		toolbarGrid.setVerticalSpacing(10);// 垂直间隔
@@ -122,7 +124,7 @@ public class MainActivity extends Activity {
 					long arg3) {
 
 				switch (arg2) {
-				case TOOLBAR_ITEM_PAGEHOME:
+				case TOOLBAR_ITEM_HOME:
 					wv.loadUrl(HOMEPAGE);
 					/*
 					 * if (validStatusCode(HOMEPAGE)) { wv.loadUrl(HOMEPAGE);
@@ -134,21 +136,20 @@ public class MainActivity extends Activity {
 					 */
 					break;
 				case TOOLBAR_ITEM_BACK:
-//					wv.loadUrl("http://192.168.8.101/w/index.ac");
-					 wv.goBack();
+					// wv.loadUrl("http://192.168.8.101/w/index.ac");
+					wv.goBack();
 					break;
 				case TOOLBAR_ITEM_FORWARD:
-					 wv.goForward();
-//					wv.loadUrl("http://192.168.8.102/w/index.ac");
+					wv.goForward();
+					// wv.loadUrl("http://192.168.8.102/w/index.ac");
 					break;
 				case TOOLBAR_ITEM_REFRESH:
-					 wv.reload();
-//					wv.loadUrl("http://192.168.8.103/w/index.ac");
+					wv.reload();
+					// wv.loadUrl("http://192.168.8.103/w/index.ac");
 					break;
 				case TOOLBAR_ITEM_EXIT:
 					// dialog();
-					 wv.loadUrl("javascript:$('.deploy-sidebar').click();");
-//					wv.loadUrl("http://192.168.8.104/w/index.ac");
+					wv.loadUrl("javascript:$('.deploy-sidebar').click();");
 					break;
 				}
 			}
@@ -182,20 +183,21 @@ public class MainActivity extends Activity {
 		for (int i = 0; i < menuNameArray.length; i++) {
 			HashMap<String, Object> map = new HashMap<String, Object>();
 			map.put("itemImage", imageResourceArray[i]);
-//			map.put("itemText", menuNameArray[i]);
+			// map.put("itemText", menuNameArray[i]);
 			data.add(map);
 		}
-//		SimpleAdapter simperAdapter = new SimpleAdapter(this, data,
-//				R.layout.item_menu, new String[] { "itemImage", "itemText" },
-//				new int[] { R.id.item_image, R.id.item_text });
+		// SimpleAdapter simperAdapter = new SimpleAdapter(this, data,
+		// R.layout.item_menu, new String[] { "itemImage", "itemText" },
+		// new int[] { R.id.item_image, R.id.item_text });
 		SimpleAdapter simperAdapter = new SimpleAdapter(this, data,
-				R.layout.item_menu, new String[] { "itemImage"},
-				new int[] { R.id.item_image});
+				R.layout.item_menu, new String[] { "itemImage" },
+				new int[] { R.id.item_image });
 		return simperAdapter;
 	}
 
 	public void loadurl(final WebView view, final String url) {
 		new Thread() {
+			@Override
 			public void run() {
 				view.loadUrl(url);
 			}
@@ -282,7 +284,7 @@ public class MainActivity extends Activity {
 				}
 			}
 		} catch (Exception e) {
-			Log.v("error", e.toString());//e.printStackTrace();
+			Log.v("error", e.toString());
 		}
 		return false;
 	}
@@ -302,7 +304,7 @@ public class MainActivity extends Activity {
 	 * @param activity
 	 *            要执行的activity
 	 */
-	public static void createDialog(final Context context, int title, int msg,
+	public void createDialog(final Context context, int title, int msg,
 			int leftButton, int rightButton, final String activity) {
 		if (context != null) {
 			AlertDialog.Builder dialog = new AlertDialog.Builder(context);
@@ -383,6 +385,7 @@ public class MainActivity extends Activity {
 		}
 
 		// 页面加载进度条
+		@Override
 		public void onProgressChanged(WebView view, int progress) {// 载入进度改变而触发
 			if (progress == 100) {
 				progressBar.setVisibility(View.GONE);// 进度条
@@ -437,7 +440,7 @@ public class MainActivity extends Activity {
 				return;
 			String[] selectPicTypeStr = { "拍照", "相册" };
 			AlertDialog alertDialog = new AlertDialog.Builder(this)
-			 .setCancelable(false)
+					.setCancelable(false)
 					.setItems(selectPicTypeStr,
 							new DialogInterface.OnClickListener() {
 								// @Override
@@ -461,13 +464,15 @@ public class MainActivity extends Activity {
 											+ "/tongli_wmp/temp";
 									new File(compressPath).mkdirs();
 									compressPath = compressPath
-											+ File.separator + (System.currentTimeMillis())+".jpg";
+											+ File.separator
+											+ (System.currentTimeMillis())
+											+ ".jpg";
 								}
 							}).create();
 			alertDialog.setCanceledOnTouchOutside(false);
 			alertDialog.show();
 		} catch (Exception e) {
-			Log.v("error", e.toString());//e.printStackTrace();
+			Log.v("error", e.toString());
 		}
 	}
 
@@ -498,8 +503,7 @@ public class MainActivity extends Activity {
 			intent.putExtra(MediaStore.EXTRA_OUTPUT, cameraUri);
 			startActivityForResult(intent, REQ_CAMERA);
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			Log.v("error", e.toString());//e.printStackTrace();
+			Log.v("error", e.toString());
 		}
 	}
 
@@ -509,29 +513,28 @@ public class MainActivity extends Activity {
 	private void afterOpenCamera() {
 		try {
 			File f = new File(imagePaths);
-			Log.v("error",""+ f.exists());
+			Log.v("error", "" + f.exists());
 			addImageGallery(f);
 			FileUtils.compressFile(f.getPath(), compressPath);
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			Log.v("error", e.toString());//e.printStackTrace();
+			Log.v("error", e.toString());
 		}
 	}
 
 	/** 解决拍照后在相册中找不到的问题 */
 	private void addImageGallery(File file) {
 		try {
-			if(file==null||!file.exists()){
+			if (file == null || !file.exists()) {
 				Log.v("error", "文件不存在");
 			}
 			ContentValues values = new ContentValues();
-			values.put(MediaStore.Images.Media.DATA, file.getAbsolutePath());
-			values.put(MediaStore.Images.Media.MIME_TYPE, "image/jpeg");
+			values.put(MediaColumns.DATA, file.getAbsolutePath());
+			values.put(MediaColumns.MIME_TYPE, "image/jpeg");
 			getContentResolver().insert(
 					MediaStore.Images.Media.EXTERNAL_CONTENT_URI, values);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
-			Log.v("error", e.toString());//e.printStackTrace();
+			Log.v("error", e.toString());
 		}
 	}
 
@@ -540,15 +543,14 @@ public class MainActivity extends Activity {
 	 */
 	private void chosePic() {
 		try {
-//			FileUtils.delFile(compressPath);
+			// FileUtils.delFile(compressPath);
 			Intent innerIntent = new Intent(Intent.ACTION_GET_CONTENT); // "android.intent.action.GET_CONTENT"
 			String IMAGE_UNSPECIFIED = "image/*";
 			innerIntent.setType(IMAGE_UNSPECIFIED); // 查看类型
 			Intent wrapperIntent = Intent.createChooser(innerIntent, null);
 			startActivityForResult(wrapperIntent, REQ_CHOOSE);
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			Log.v("error", e.toString());//e.printStackTrace();
+			Log.v("error", e.toString());
 		}
 	}
 
@@ -561,8 +563,8 @@ public class MainActivity extends Activity {
 
 		try {
 			// 获取图片的路径：
-			String[] proj = { MediaStore.Images.Media.DATA };
-			if(data==null){
+			String[] proj = { MediaColumns.DATA };
+			if (data == null) {
 				return null;
 			}
 			// 好像是android多媒体数据库的封装接口，具体的看Android文档
@@ -574,7 +576,7 @@ public class MainActivity extends Activity {
 			}
 			// 按我个人理解 这个是获得用户选择的图片的索引值
 			int column_index = cursor
-					.getColumnIndexOrThrow(MediaStore.Images.Media.DATA);
+					.getColumnIndexOrThrow(MediaColumns.DATA);
 			// 将光标移至开头 ，这个很重要，不小心很容易引起越界
 			cursor.moveToFirst();
 			// 最后根据索引值获取图片路径
@@ -589,8 +591,7 @@ public class MainActivity extends Activity {
 						.show();
 			}
 		} catch (IllegalArgumentException e) {
-			// TODO Auto-generated catch block
-			Log.v("error", e.toString());//e.printStackTrace();
+			Log.v("error", e.toString());
 		}
 		return null;
 	}
@@ -616,11 +617,11 @@ public class MainActivity extends Activity {
 			mUploadMessage = null;
 			super.onActivityResult(requestCode, resultCode, intent);
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			Log.v("error", e.toString());//e.printStackTrace();
+			Log.v("error", e.toString());
 		}
 	}
 
+	@Override
 	public boolean onKeyDown(int keyCode, KeyEvent event) {
 		if ((keyCode == KeyEvent.KEYCODE_BACK) && wv.canGoBack()) {
 			wv.goBack();

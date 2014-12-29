@@ -1,7 +1,5 @@
 package com.softvan.app;
 
- import com.softvan.app.R;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -14,7 +12,7 @@ import android.widget.ImageView;
 
 /**
  * 
-  软件启动Activity
+ 软件启动Activity
  */
 public class InitActivity extends Activity {
 	public static final int REFRESH_INIT = 1;
@@ -46,7 +44,7 @@ public class InitActivity extends Activity {
 			public void onAnimationEnd(Animation animation) {
 				Intent intent = new Intent(InitActivity.this,
 						MainActivity.class);
-				startActivity(intent); 
+				startActivity(intent);
 				// 设置动画
 				overridePendingTransition(android.R.anim.fade_in,
 						android.R.anim.fade_out);

@@ -26,115 +26,109 @@ public class FileUtils {
 	 *            压缩后的图片路径
 	 * @return
 	 */
-	/**
-	 * 把图片压缩到200K
-	 * 
-	 * @param oldpath
-	 *            压缩前的图片路径
-	 * @param newPath
-	 *            压缩后的图片路径
-	 * @return
-	 */
 	public static File compressFile(String oldpath, String newPath) {
-		File file = null ;
+		File file = null;
 		try {
 			Bitmap compressBitmap = FileUtils.decodeFile(oldpath);
-			if(compressBitmap==null){
-				return  null;
+			if (compressBitmap == null) {
+				return null;
 			}
 			Bitmap newBitmap = ratingImage(oldpath, compressBitmap);
 			ByteArrayOutputStream os = new ByteArrayOutputStream();
 			newBitmap.compress(CompressFormat.PNG, 100, os);
 			byte[] bytes = os.toByteArray();
-			
+
 			try {
 				file = FileUtils.getFileFromBytes(bytes, newPath);
 			} catch (Exception e) {
-				Log.v("error", e.toString());//e.printStackTrace();
-			}finally{
-				if(newBitmap != null ){
-					if(!newBitmap.isRecycled()){
+				Log.v("error", e.toString());
+			} finally {
+				if (newBitmap != null) {
+					if (!newBitmap.isRecycled()) {
 						newBitmap.recycle();
 					}
-					newBitmap  = null;
+					newBitmap = null;
 				}
-				if(compressBitmap != null ){
-					if(!compressBitmap.isRecycled()){
+				if (compressBitmap != null) {
+					if (!compressBitmap.isRecycled()) {
 						compressBitmap.recycle();
 					}
-					compressBitmap  = null;
+					compressBitmap = null;
 				}
 			}
 		} catch (Exception e) {
-			
-			Log.v("error", e.toString());//e.printStackTrace();
+
+			Log.v("error", e.toString());
 		}
 		return file;
 	}
-	
-	private static Bitmap ratingImage(String filePath,Bitmap bitmap){
+
+	private static Bitmap ratingImage(String filePath, Bitmap bitmap) {
 		try {
 			int degree = readPictureDegree(filePath);
 			return rotaingImageView(degree, bitmap);
 		} catch (Exception e) {
-			
-			Log.v("error", e.toString());//e.printStackTrace();
+
+			Log.v("error", e.toString());
 		}
 		return null;
 	}
-	
+
 	/**
-	 *  旋转图片
+	 * 旋转图片
+	 * 
 	 * @param angle
 	 * @param bitmap
 	 * @return Bitmap
 	 */
-	public static Bitmap rotaingImageView(int angle , Bitmap bitmap) {
-        // 创建新的图片
-		Bitmap resizedBitmap=null;
+	public static Bitmap rotaingImageView(int angle, Bitmap bitmap) {
+		// 创建新的图片
+		Bitmap resizedBitmap = null;
 		try {
-			//旋转图片 动作
-			Matrix matrix = new Matrix();;
-			if(matrix==null){
-				System.err.println("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
-			}
+			// 旋转图片 动作
+			Matrix matrix = new Matrix();
+			;
 			matrix.postRotate(angle);
 			System.out.println("angle2=" + angle);
 			resizedBitmap = Bitmap.createBitmap(bitmap, 0, 0,
 					bitmap.getWidth(), bitmap.getHeight(), matrix, true);
 		} catch (Exception e) {
-			
-			Log.v("error", e.toString());//e.printStackTrace();
+
+			Log.v("error", e.toString());
 		}
 		return resizedBitmap;
 	}
-	
+
 	/**
 	 * 读取图片属性：旋转的角度
-	 * @param path 图片绝对路径
+	 * 
+	 * @param path
+	 *            图片绝对路径
 	 * @return degree旋转的角度
 	 */
-    public static int readPictureDegree(String path) {
-        int degree  = 0;
-        try {
-                ExifInterface exifInterface = new ExifInterface(path);
-                int orientation = exifInterface.getAttributeInt(ExifInterface.TAG_ORIENTATION, ExifInterface.ORIENTATION_NORMAL);
-                switch (orientation) {
-                case ExifInterface.ORIENTATION_ROTATE_90:
-                        degree = 90;
-                        break;
-                case ExifInterface.ORIENTATION_ROTATE_180:
-                        degree = 180;
-                        break;
-                case ExifInterface.ORIENTATION_ROTATE_270:
-                        degree = 270;
-                        break;
-                }
-        } catch (IOException e) {
-                Log.v("error", e.toString());//e.printStackTrace();
-        }
-        return degree;
-    }
+	public static int readPictureDegree(String path) {
+		int degree = 0;
+		try {
+			ExifInterface exifInterface = new ExifInterface(path);
+			int orientation = exifInterface.getAttributeInt(
+					ExifInterface.TAG_ORIENTATION,
+					ExifInterface.ORIENTATION_NORMAL);
+			switch (orientation) {
+			case ExifInterface.ORIENTATION_ROTATE_90:
+				degree = 90;
+				break;
+			case ExifInterface.ORIENTATION_ROTATE_180:
+				degree = 180;
+				break;
+			case ExifInterface.ORIENTATION_ROTATE_270:
+				degree = 270;
+				break;
+			}
+		} catch (IOException e) {
+			Log.v("error", e.toString());
+		}
+		return degree;
+	}
 
 	/**
 	 * 把字节数组保存为一个文件
@@ -153,14 +147,14 @@ public class FileUtils {
 			stream.write(b);
 		} catch (Exception e) {
 			// log.error("helper:get file from byte process error!");
-			Log.v("error", e.toString());//e.printStackTrace();
+			Log.v("error", e.toString());
 		} finally {
 			if (stream != null) {
 				try {
 					stream.close();
 				} catch (IOException e) {
 					// log.error("helper:get file from byte process error!");
-					Log.v("error", e.toString());//e.printStackTrace();
+					Log.v("error", e.toString());
 				}
 			}
 		}
@@ -174,13 +168,14 @@ public class FileUtils {
 	 * @return
 	 */
 	public static Bitmap decodeFile(String fPath) {
-		Bitmap bm=null;
+		Bitmap bm = null;
 		try {
 			BitmapFactory.Options opts = new BitmapFactory.Options();
 			opts.inJustDecodeBounds = true;
 			opts.inDither = false; // Disable Dithering mode
 			opts.inPurgeable = true; // Tell to gc that whether it needs free
-			opts.inInputShareable = true; // Which kind of reference will be used to
+			opts.inInputShareable = true; // Which kind of reference will be
+											// used to
 			BitmapFactory.decodeFile(fPath, opts);
 			final int REQUIRED_SIZE = 200;
 			int scale = 1;
@@ -191,54 +186,50 @@ public class FileUtils {
 						/ (float) REQUIRED_SIZE);
 				scale = heightRatio < widthRatio ? heightRatio : widthRatio;//
 			}
-			Log.i("scale", "scal ="+ scale);
+			Log.i("scale", "scal =" + scale);
 			opts.inJustDecodeBounds = false;
 			opts.inSampleSize = scale;
-			Bitmap b=BitmapFactory.decodeFile(fPath, opts);
-			if(b==null){
+			Bitmap b = BitmapFactory.decodeFile(fPath, opts);
+			if (b == null) {
 				return null;
 			}
 			bm = b.copy(Config.ARGB_8888, false);
 		} catch (Exception e) {
-			Log.v("error", e.toString());//e.printStackTrace();
+			Log.v("error", e.toString());
 		}
 		return bm;
 	}
-	
-	
-	
+
 	/**
 	 * 创建目录
+	 * 
 	 * @param path
 	 */
-	public static void setMkdir(String path)
-	{
+	public static void setMkdir(String path) {
 		File file = new File(path);
-		if(!file.exists())
-		{
+		if (!file.exists()) {
 			file.mkdirs();
 			Log.e("file", "目录不存在  创建目录    ");
-		}else{
+		} else {
 			Log.e("file", "目录存在");
 		}
 	}
-	
+
 	/**
 	 * 获取目录名称
+	 * 
 	 * @param url
 	 * @return FileName
 	 */
-	public static String getFileName(String url)
-	{
+	public static String getFileName(String url) {
 		int lastIndexStart = url.lastIndexOf("/");
-		if(lastIndexStart!=-1)
-		{
-			return url.substring(lastIndexStart+1, url.length());
-		}else{
+		if (lastIndexStart != -1) {
+			return url.substring(lastIndexStart + 1, url.length());
+		} else {
 			return null;
 		}
 	}
-	
+
 	/**
 	 * 删除该目录下的文件
 	 * 
